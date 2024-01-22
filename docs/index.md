@@ -1,6 +1,6 @@
 
 <center>
-#<font size="6.5" color="grey blue"> Welcome to My MkDocs Project</font>
+#<font size="6.5" color="greyblue"> Welcome to My MkDocs Project</font>
 </center>
 
 !!! tip "Introduction"
