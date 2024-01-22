@@ -1,5 +1,7 @@
 site_name: WHU-WWZ Website
 site_url: https://zehyrw.github.io
+site_author: 王卓
+site_description: 王卓的个人网站
 
 
 nav:
@@ -18,11 +20,15 @@ nav:
 
 theme:
   name: 'material'
+  static_templates:
+    - 404.html
   language: zh
   font:
     # text: Long Cang
     text: Exo 2
     code: Playfair Display
+  favicon: assets/images/博客.png
+  logo: assets/官方网站.png
   palette:
     # Toggle light mode
     - scheme: default
@@ -78,7 +84,7 @@ extra:
       lang: ja 
 
 repo_url: https://github.com/ZehyrW
-repo_name: ZehyrW(Wang Zhuo)
+repo_name: ZehyrW(Wang Zhuo) # 右上角的名字
 
 copyright: Copyright &copy; 2024 Whu-WWZ
 
@@ -109,6 +115,31 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
   - pymdownx.details # admonition需要
+  - abbr
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra_javascript:
   # 数学公式支持

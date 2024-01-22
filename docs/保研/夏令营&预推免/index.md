@@ -1,0 +1,25 @@
+<!-- <style>
+    .md-header {
+        position: initial;
+    }
+    
+    .md-main__inner {
+        margin: 0;
+    }
+    
+    .md-content {
+        display: none;
+    }
+    
+    @media screen and (min-width: 60em) {
+        .md-sidebar--secondary {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 76.25em) {
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+</style> -->
