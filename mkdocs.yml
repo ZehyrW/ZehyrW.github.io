@@ -51,9 +51,6 @@ theme:
 
 extra:
   social: # icons
-    # - icon: fontawesome/brands/bilibili
-    #   link: https://space.bilibili.com/24502827
-    #   name: Bilibili | 杨希杰619 # 鼠标悬浮提示
     - icon: fontawesome/brands/github
       link: https://github.com/ZehyrW
       name: GitHub 
@@ -69,18 +66,18 @@ extra:
   alternate:
     # Switch to English
     - name: English
-      link: <https://zehyrw.github.io>/en/
+      link: https://zehyrw.github.io
       lang: en
       # Switch to Chinese
     - name: 简体中文
-      link: <https://zehyrw.github.io>/de/
+      link: https://zehyrw.github.io
       lang: zh
       # Switch to Japanese
     - name: 日本語
-      link: <https://zehyrw.github.io>/ja/
+      link: https://zehyrw.github.io
       lang: ja 
 
-repo_url: https://github.com/ZehyrW 右上角点击跳转的链接
+repo_url: https://github.com/ZehyrW #右上角点击跳转的链接
 repo_name: ZehyrW(Wang Zhuo) # 右上角的名字
 
 copyright: Copyright &copy; 2024 Whu-WWZ
