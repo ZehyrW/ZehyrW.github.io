@@ -1920,12 +1920,12 @@
 <ul>
 <li>前缀树</li>
 </ul>
-<p><img src="../figs/image-20240104164430787.png" style="zoom:50%;" /></p>
+<p><img src="figs\image-20240104164430787.png" style="zoom:50%;" /></p>
 <p>每个结点包含一个字符；   从root到某结点，构成字符串；    结点的子结点不相同</p>
 <ul>
 <li>AC自动机</li>
 </ul>
-<p><img src="../figs/image-20240104165310635.png" alt="image-20240104165310635" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240104165310635.png" alt="image-20240104165310635" style="zoom:80%;" /></p>
 <hr />
 <ul>
 <li>序列标注法：没有</li>
@@ -1937,11 +1937,11 @@
 </li>
 <li>
 <p><strong>新词发现算法</strong>：</p>
-<p><img src=" ../figs/image-20240104170515771.png" alt="image-20240104170515771" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240104170515771.png" alt="image-20240104170515771" style="zoom:50%;" /></p>
 <blockquote>
 <p>其中的词频、自由度、凝固度的计算如下。选取abc作为文本文段。</p>
 </blockquote>
-<p><img src=" ../figs/image-20240104170624109.png" alt="image-20240104170624109" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240104170624109.png" alt="image-20240104170624109" style="zoom:50%;" /></p>
 <p>新词发现的必要性：未登录词
 计算候选词的频率，凝固度（互信息），自由度（信息熵）作为特征：<strong>无监督</strong>
 特征高于阈值的候选词，作为结果词，阈值需要人工调节
@@ -1960,19 +1960,19 @@
 <p>参数：</p>
 </li>
 </ul>
-<p><img src=" ../figs/image-20240104172227501.png" alt="image-20240104172227501" style="zoom: 67%;" /></p>
+<p><img src=" figs\image-20240104172227501.png" alt="image-20240104172227501" style="zoom: 67%;" /></p>
 <ul>
 <li>转移概率：(隐含状态之间存在转换概率)</li>
 </ul>
-<p><img src=" ../figs/image-20240104172323849.png" alt="image-20240104172323849" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104172323849.png" alt="image-20240104172323849" style="zoom:67%;" /></p>
 <ul>
 <li>发射概率：（隐含状态与可见状态之间的概率）</li>
 </ul>
-<p><img src=" ../figs/image-20240104172427543.png" alt="image-20240104172427543" style="zoom: 50%;" /></p>
+<p><img src=" figs\image-20240104172427543.png" alt="image-20240104172427543" style="zoom: 50%;" /></p>
 <ul>
 <li>进行预测（维特比算法 无环有向图最优路径算法）</li>
 </ul>
-<p><img src=" ../figs/image-20240104173432929.png" alt="image-20240104173432929" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104173432929.png" alt="image-20240104173432929" style="zoom:67%;" /></p>
 <ul>
 <li>
 <p>HMM的应用</p>
@@ -2022,13 +2022,13 @@
 <ul>
 <li><strong>解释</strong>：确定一个歧义词的哪一种语义在一个特殊的使用环境中被调用</li>
 </ul>
-<p><img src=" ../figs/image-20240104181924819.png" alt="image-20240104181924819" style="zoom: 33%;" /></p>
+<p><img src=" figs\image-20240104181924819.png" alt="image-20240104181924819" style="zoom: 33%;" /></p>
 <h2 id="part2">Part2 句法分析<a class="headerlink" href="#part2" title="Permanent link">&para;</a></h2>
 <h4 id="_4">句法结构（可能出简答题）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>句法成分树</li>
 </ul>
-<p><img src=" ../figs/format,png" alt="img" style="zoom:50%;" /></p>
+<p><img src=" figs\format,png" alt="img" style="zoom:50%;" /></p>
 <ul>
 <li>节点是什么？边代表什么意思？</li>
 </ul>
@@ -2048,7 +2048,7 @@
 <ul>
 <li>依存树</li>
 </ul>
-<p><img src=" ../figs/v2-0bc54788687c714d12f467dd91aa385e_720w.webp" alt="img" style="zoom:50%;" /></p>
+<p><img src=" figs\v2-0bc54788687c714d12f467dd91aa385e_720w.webp" alt="img" style="zoom:50%;" /></p>
 <ul>
 <li>节点是什么？边代表什么意思？</li>
 </ul>
@@ -2068,23 +2068,23 @@
 <ul>
 <li><strong>解释</strong>： 给定上下文，去预测下面一个词或者一段文本出现的概率</li>
 </ul>
-<p><img src=" ../figs/image-20240104200553550.png" alt="image-20240104200553550" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104200553550.png" alt="image-20240104200553550" style="zoom:67%;" /></p>
 <p><strong>零概率问题</strong>：</p>
 <p>由于数据稀疏造成，在训练集中而未在测试集中出现的n元短语，会造成含有该短语的句子的出现概率为0</p>
 <p>语言模型的参数就是**词的概率以及给定前几个词情况下的条件概率**</p>
 <p><strong>神经网络与传统语言模型</strong>：</p>
-<p><img src=" ../figs/image-20240104201114804.png" alt="image-20240104201114804" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104201114804.png" alt="image-20240104201114804" style="zoom:67%;" /></p>
 <h4 id="word2vec">word2vec模型架构<a class="headerlink" href="#word2vec" title="Permanent link">&para;</a></h4>
 <p><strong>两种无监督训练方法</strong>（模型要能画出来）</p>
 <ul>
 <li>倒三角架构（CBOW）</li>
 </ul>
-<p><img src=" ../figs/image-20240104201257653.png" alt="image-20240104201257653" style="zoom: 67%;" /></p>
+<p><img src=" figs\image-20240104201257653.png" alt="image-20240104201257653" style="zoom: 67%;" /></p>
 <p><strong>功能</strong>：通过上下文预测当前词出现的概率</p>
 <ul>
 <li>三角架构（skip-gram）</li>
 </ul>
-<p><img src=" ../figs/image-20240104202213691.png" alt="image-20240104202213691" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104202213691.png" alt="image-20240104202213691" style="zoom:67%;" /></p>
 <p><strong>功能</strong>：通过当前词预测上下文</p>
 <p>简答？</p>
 <p><strong>简述两种方式训练词向量的区别</strong></p>
@@ -2215,7 +2215,7 @@
 <p><strong>介绍：</strong> CNN主要用于图像处理任务，通过卷积层和池化层有效提取图像的特征。每个卷积核可以捕捉局部的空间特征，从而实现对图像的高效抽象。（输入-卷积-池化-全连接-输出）</p>
 <p><strong>特点：</strong> 在图像处理、计算机视觉领域表现出色，能够减少参数数量，对平移不变性有良好的处理能力。</p>
 <p><img alt="image-20240104212300944" src="../figs/image-20240104212300944.png" /></p>
-<p><img src=" ../figs/image-20240104213518255.png" alt="image-20240104213518255" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240104213518255.png" alt="image-20240104213518255" style="zoom:80%;" /></p>
 <p>全连接层就是传统的全连接神经网络</p>
 <p>卷积核的特征提取能力（学习词和词的上下文特征）：多层级联实现多尺度特征学习（多个卷积层），同时能够减少训练参数</p>
 <p>池化层用来最大化主要特征（降维，获得定长特征向量），避免过拟合（有两种池化方式，一个是max-pooling，另外一个是average-pooling）</p>
@@ -2234,9 +2234,9 @@
 </ul>
 <p><strong>介绍：</strong> LSTM是为解决RNN中长距离依赖和梯度消失问题而设计的。引入了门控机制，包括输入门、遗忘门和输出门，能够更好地捕捉长期依赖关系。</p>
 <p><strong>特点：</strong> 对于处理长序列、长距离依赖关系表现优异，解决了传统RNN的一些问题。</p>
-<p><img src=" ../figs/image-20240104220547138.png" alt="image-20240104220547138" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104220547138.png" alt="image-20240104220547138" style="zoom:67%;" /></p>
 <p>相较于rnn，lstm新增了时间链ct（相当于日记本，记录长时记忆）,与短时记忆st之间建立联系</p>
-<p><img src=" ../figs/image-20240104221027880.png" alt="image-20240104221027880" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240104221027880.png" alt="image-20240104221027880" style="zoom:67%;" /></p>
 <p>f1是删除门：根据xt和st-1来过滤重要特征，忽略无关信息。记忆细胞中多少信息需要被删除</p>
 <p>f2是输入门：根据xt和st-1决定。多少信息添加到记忆细胞中</p>
 <p><strong>对比分析</strong>：</p>
@@ -2278,9 +2278,9 @@
 <p><strong>解释</strong>：将有限的注意力集中在重点信息上，从而节省资源，快速获得最有效的信息。</p>
 <p><img alt="Attention的位置" src="../figs/d3164-2019-11-07-weizhi.png" /></p>
 <p>注意力实际上就是**权重**</p>
-<p><img src=" ../figs/image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
 <p>需要三个指定的输入Q(query)，K(key)，V(value)，然后通过公式得到注意力的计算结果，这个结果代表query在key和value作用下的表示。其中Q、K、V由输入X分别于其参数矩阵W、K、W 相乘得到</p>
-<p><img src=" ../figs/image-20240105233816142.png" alt="image-20240105233816142" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240105233816142.png" alt="image-20240105233816142" style="zoom:50%;" /></p>
 <blockquote>
 <p>这其实是自注意力机制</p>
 </blockquote>
@@ -2301,7 +2301,7 @@
 <h4 id="rst">理解修辞结构理论（RST）<a class="headerlink" href="#rst" title="Permanent link">&para;</a></h4>
 <p>修辞结构理论是有关篇章分析和生成的理论</p>
 <p>该理论认为，连贯的篇章由不同层次的修辞关系组成，并且可以表示为一种**树形**结构。从篇章单位（EDU）开始，修辞结构树逐步覆盖整个篇章，形成层次化的篇章结构树。层次的复杂程度与篇章语义的复杂程度相关，语义越复杂，层次越多。如下所示。</p>
-<p><img src=" ../figs/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" /></p>
+<p><img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" /></p>
 <h4 id="edu">基础语篇单位（EDU）指什么<a class="headerlink" href="#edu" title="Permanent link">&para;</a></h4>
 <p><strong>解释</strong>：基本篇章单元是句子内不重叠的文本片段</p>
 <p><img alt="img" src="../figs/v2-fd7fe81f15ba5bb1c95326544763ce72_720w.webp" /></p>
@@ -2321,7 +2321,7 @@
 <p>无主次之分的多核关系 multinuclear relation，修饰关系联结的单元中无所谓谁是核心谁是卫星。 对比contrast关系和列表关系list都是典型的多核关系</p>
 </li>
 </ul>
-<p><img src=" ../figs/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 67%;" /></p>
+<p><img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 67%;" /></p>
 <p>大致来说，完成篇章分析步骤如下：</p>
 <ol>
 <li>篇章分成基础语篇单位EDU   </li>
@@ -2350,20 +2350,20 @@
 <p>语义向量不参与decoder</p>
 </li>
 </ul>
-<p><img src=" ../figs/image-20240109143740075.png" alt="image-20240109143740075" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109143740075.png" alt="image-20240109143740075" style="zoom:67%;" /></p>
 <p>encoder负责**将输入的文本序列压缩成指定长度的向量**，即语义向量C，这个向量可以看作输入序列的语义。</p>
 <p>decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输出序列。此时**上一时刻的输出会成为当**</p>
 <p><strong>前时刻的输入</strong>，而且语义向量C只作为初始状态参与运算，后面运算与C无关。</p>
 <ol>
 <li>语义向量参与decoder</li>
 </ol>
-<p><img src=" ../figs/image-20240109144014573.png" alt="image-20240109144014573" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109144014573.png" alt="image-20240109144014573" style="zoom:67%;" /></p>
 <p>**语义向量**C参与序列所有时刻的运算，上一时刻的输出仍然作为当前时刻的输入，但C参与每个时刻的运算。</p>
 <blockquote>
 <p>Decoder的每一次解码又会作为下一次解码的输入，但这样会导致一个问题，如果其中一个RNN单元解码出现误差，那么这个误差就会传递到下一个RNN单元，使训练结果误差越来越大。所以可以引入attention机制。</p>
 </blockquote>
 <h4 id="_14">生成模型的训练目标函数<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
-<p><img src=" ../figs/image-20240109144327953.png" alt="image-20240109144327953" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109144327953.png" alt="image-20240109144327953" style="zoom:67%;" /></p>
 <blockquote>
 <p>交叉熵损失</p>
 </blockquote>
@@ -2375,7 +2375,7 @@
 <p><strong>Beam Search只用于测试，不用于训练过程。</strong></p>
 <p>​   当模型训练好后，给其输入一段话，其输出的每个单元的 y 给的是各个词的概率，如何根据概率选词且如何判断是否句子终止呢？</p>
 <p>​   采取的方法是在每个时间步，选取当前时间步条件概率最大的k个词，作为该时间步的候选输出序列。如下图，k选择2，第一步p(A|c)和p(C|c)最大；第二步 P(AB|c),P(CE|c)最大；第三步P(ABD|c),P(CED|c)最大。这样，得到的最终候选序列就是各个时间步的得到的序列的集合，下图即为6个 {A, C, AB, CE,ABD, CED}。那么最终预测结果就是要从这6个中选出分最高的。按概率算的话，<strong>序列越长的概率肯定越小</strong>，所以一般最后分数计算会有一个和序列长度有关的惩罚系数，如下。</p>
-<p><img src=" ../figs/image-20240109144909651.png" alt="image-20240109144909651" style="zoom: 67%;" /></p>
+<p><img src=" figs\image-20240109144909651.png" alt="image-20240109144909651" style="zoom: 67%;" /></p>
 <h5 id="top-k">top-k采样<a class="headerlink" href="#top-k" title="Permanent link">&para;</a></h5>
 <p><strong>Top-k Sampling:</strong></p>
 <p><strong>基本思想：</strong> 在每个时间步，从模型生成的概率分布中选择概率最高的前k个词作为候选，然后</p>
@@ -2389,7 +2389,7 @@
 <p><strong>优势：</strong> 可以在保持多样性的同时，更加控制生成的稳定性。</p>
 <p><strong>缺点：</strong> 可能导致生成相对较短的序列，因为累积概率很容易达到阈值。</p>
 <p>与 top-k 固定选取前 k 个 tokens 不同，top-p 选取的 tokens 数量不是固定的，这个方法是设定一个概率阈值。例如：将 top-p 设定为 0.15，即选择前 15% 概率的 tokens 作为候选。如下图所示，United 和 Netherlands 的概率加起来为 15% ，所以候选词就是这俩，最后再从这些候选词里，根据概率分数，选择 united 这个词。</p>
-<p><img src=" ../figs/image-20240109145152385.png" alt="image-20240109145152385" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109145152385.png" alt="image-20240109145152385" style="zoom:67%;" /></p>
 <h4 id="bleurouge">生成模型的评估： BLEU、ROUGE<a class="headerlink" href="#bleurouge" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>BLEU</strong></li>
@@ -2399,13 +2399,13 @@
 <li>
 <p><strong>N-gram计算</strong>：计算生成文本和参考文本中的n-gram（连续的n个词）的数量。通常，BLEU</p>
 <p>考虑1-gram到N-gram。很容易理解，就是像下面这样</p>
-<p><img src=" ../figs/image-20240109145648077.png" alt="image-20240109145648077" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109145648077.png" alt="image-20240109145648077" style="zoom:67%;" /></p>
 <blockquote>
 <p>一般情况1-gram可以代表原文有多少词被单独翻译出来，可以反映译文的**充分性**，2-gram以上可以反映译文的**流畅性**，它的值越高说明可读性越好</p>
 </blockquote>
 </li>
 </ul>
-<p><img src=" ../figs/image-20240109150002216.png" alt="image-20240109150002216" style="zoom: 67%;" /></p>
+<p><img src=" figs\image-20240109150002216.png" alt="image-20240109150002216" style="zoom: 67%;" /></p>
 <blockquote>
 <p>大致知道这个指标是干啥的就行 计算公式就算了。。。。</p>
 </blockquote>
@@ -2413,7 +2413,7 @@
 <li><strong>ROUGR</strong></li>
 </ul>
 <p>ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面向n元词召回率的评价方法。ROUGE准则由一系列的评价方法组成，包括ROUGE-N(N是n-gram中n，取值有1，2，3，4)，ROUGE-L，ROUGE-S, ROUGE-W，ROUGE-SU等。</p>
-<p><img src=" ../figs/image-20240109150233661.png" alt="image-20240109150233661" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109150233661.png" alt="image-20240109150233661" style="zoom:80%;" /></p>
 <blockquote>
 <p>可以看出，ROUGE与召回率的定义很相似。</p>
 </blockquote>
@@ -2436,7 +2436,7 @@
 <p>self-attention</p>
 </li>
 </ul>
-<p><img src=" ../figs/image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
 <p><img alt="image-20240107223823585" src="../figs/image-20240107223823585.png" /></p>
 <p>​ self-attention，是一种通过自身和自身相关联的 attention 机制，从而得到一个更好的representation 来表达自身，self-attention 可以看成一般 attention 的一种特殊情况。在 self-attention 中， Q=K=V,序列中的每个单词(token)和该序列中其余单词(token)进行 attention 计算。self-attention 的特点在于无视词(token)之间的距离直接计算依赖关系，从而能够学习到序列的内部结构。</p>
 <p>​ 引入 Self Attention 后会更容易**捕获句子中长距离的相互依赖的特征**，因为如果是**RNN 或者 LSTM，需要依次序序列计算，对于远距离的相互依赖的特征，要经过若干时间步步骤的信息累积才能将两者联系起来，而距离越远，有效捕获的可能性越小。**</p>
@@ -2453,9 +2453,9 @@
 <ul>
 <li>add&amp;norm</li>
 </ul>
-<p><img src=" ../figs/image-20240109151506070.png" alt="image-20240109151506070" style="zoom: 50%;" /></p>
+<p><img src=" figs\image-20240109151506070.png" alt="image-20240109151506070" style="zoom: 50%;" /></p>
 <p><img alt="image-20240107224930381" src="../figs/image-20240107224930381.png" /></p>
-<p><img src=" ../figs/image-20240109151557174.png" alt="image-20240109151557174" style="zoom: 80%;" /></p>
+<p><img src=" figs\image-20240109151557174.png" alt="image-20240109151557174" style="zoom: 80%;" /></p>
 <ul>
 <li>
 <p>decoder</p>
@@ -2485,9 +2485,9 @@
 <ul>
 <li>架构</li>
 </ul>
-<p><img src=" ../figs/image-20240107204538064.png" alt="image-20240107204538064" style="zoom:67%;" /></p>
-<p><img src=" ../figs/image-20240107204646730.png" alt="image-20240107204646730" style="zoom:67%;" /></p>
-<p><img src=" ../figs/image-20240109151729680.png" alt="image-20240109151729680" style="zoom: 67%;" /></p>
+<p><img src=" figs\image-20240107204538064.png" alt="image-20240107204538064" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240107204646730.png" alt="image-20240107204646730" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109151729680.png" alt="image-20240109151729680" style="zoom: 67%;" /></p>
 <ul>
 <li>预训练任务</li>
 </ul>
@@ -2498,7 +2498,7 @@
 <blockquote>
 <p>给定一句话，随机 Mask 掉这句话中的一个或几个词，要求根据剩余词汇预测被 Mask 掉的几个词是什么</p>
 </blockquote>
-<p><img src=" ../figs/image-20240107202755895.png" alt="image-20240107202755895" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240107202755895.png" alt="image-20240107202755895" style="zoom:50%;" /></p>
 <p>在一句话中随机选择 15%的词汇用于预测。对于原句中被 Mask 掉的词汇，80%的情况会使用一个特殊符号**[MASK]<strong>替换，10%的情况下采用一个**任意词**替换，剩余 10%情况下保持**原词汇不变</strong></p>
 <p>这么做的优点是：在后续微调的过程中，语句并不会出现[MASK]标记，当预测词汇时，模型并不知</p>
 <p>道输入对应位置的词汇是否为正确的词汇（10%的概率），这就迫使模型更多地依赖于上下文信息去</p>
@@ -2509,7 +2509,7 @@
 <blockquote>
 <p>给定一篇文章中的两句话，判断第二句话在文本中是否紧跟在第一句话之后</p>
 </blockquote>
-<p><img src=" ../figs/image-20240107203235337.png" alt="image-20240107203235337" style="zoom:50%;" /></p>
+<p><img src=" figs\image-20240107203235337.png" alt="image-20240107203235337" style="zoom:50%;" /></p>
 <p>实际上是段落重排序的简化版：只考虑两句话，判断是否是一篇文章中的前后句。在实际预训练过程中，文章作者从文本语料库中随机选择 50%正确语句对和 50%错误语句对进行训练，与 Masked LM 任务相结合，让模型能够更准确地刻画语句乃至整篇文章层面的语</p>
 <p>义信息。</p>
 <blockquote>
@@ -2580,21 +2580,21 @@
 <p>指确保人工智能系统的目标、决策和行为与人类价值观一致的过程</p>
 <h2 id="_18">一些常见模型架构图<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
 <h3 id="lstm_1">LSTM<a class="headerlink" href="#lstm_1" title="Permanent link">&para;</a></h3>
-<p><img src=" ../figs/image-20240109150821764.png" alt="image-20240109150821764" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109150821764.png" alt="image-20240109150821764" style="zoom:80%;" /></p>
 <blockquote>
 <p>标准 LSTM 的架构。{w1，w2，. 。 。 , wN } 表示长度为 N 的句子中的词向量。 {h1, h2, . 。 。 , hN } 是隐藏的向量。</p>
 </blockquote>
 <h3 id="atae-lstm">ATAE-LSTM<a class="headerlink" href="#atae-lstm" title="Permanent link">&para;</a></h3>
-<p><img src=" ../figs/image-20240109150921828.png" alt="image-20240109150921828" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109150921828.png" alt="image-20240109150921828" style="zoom:80%;" /></p>
 <blockquote>
 <p>基于注意力的 LSTM 架构。 Aspect embedding已用于确定注意力权重以及句子表示。 {w1，w2，. .. , wN } 表示长度为N的句子中的词向量。 Va 表示aspect embedding。 α是注意力权重。 {h1，h2，. .. , hN } 是隐藏向量。</p>
 </blockquote>
 <h3 id="rnn">RNN<a class="headerlink" href="#rnn" title="Permanent link">&para;</a></h3>
-<p><img src=" ../figs/image-20240109151118634.png" alt="image-20240109151118634" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109151118634.png" alt="image-20240109151118634" style="zoom:80%;" /></p>
 <h3 id="bi-lstm">BI-LSTM<a class="headerlink" href="#bi-lstm" title="Permanent link">&para;</a></h3>
-<p><img src=" ../figs/image-20240109151355236.png" alt="image-20240109151355236" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109151355236.png" alt="image-20240109151355236" style="zoom:80%;" /></p>
 <h3 id="cnn">CNN<a class="headerlink" href="#cnn" title="Permanent link">&para;</a></h3>
-<p><img src=" ../figs/image-20240109152116601.png" alt="image-20240109152116601" style="zoom:80%;" /></p>
+<p><img src=" figs\image-20240109152116601.png" alt="image-20240109152116601" style="zoom:80%;" /></p>
 <h3 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">&para;</a></h3>
 <p>见预训练部分</p>
 <h2 id="2019">2019级试卷整理<a class="headerlink" href="#2019" title="Permanent link">&para;</a></h2>
