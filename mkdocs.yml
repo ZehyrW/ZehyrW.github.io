@@ -1,0 +1,125 @@
+site_name: WHU-WWZ Website
+site_url: https://zehyrw.github.io
+
+
+nav:
+- 首页: index.md
+- 课程资料: 
+  - 大三上: 
+    - 自然语言处理: 课程资料/大三上/自然语言处理/nlp.md
+  - 大三下: 课程资料/大三下/index.md
+- 保研: 
+  - 24届信息收集: 保研/24届信息收集/index.md
+  - 机试准备: 保研/机试准备/index.md
+  - 夏令营\预推免: 保研/夏令营&预推免/index.md
+- 关于我: 关于我/About_me.md
+
+
+
+theme:
+  name: 'material'
+  language: zh
+  font:
+    # text: Long Cang
+    text: Exo 2
+    code: Playfair Display
+  palette:
+    # Toggle light mode
+    - scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+    # Toggle dark mode
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+  features:
+    - navigation.tabs
+    # - navigation.sections
+    # - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social: # icons
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/24502827
+    #   name: Bilibili | 杨希杰619 # 鼠标悬浮提示
+    - icon: fontawesome/brands/github
+      link: https://github.com/ZehyrW
+      name: GitHub 
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com
+      name: Instagram
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+      name: Twitter
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<2119240634@qq.com>
+
+  alternate:
+    # Switch to English
+    - name: English
+      link: <https://zehyrw.github.io>/en/
+      lang: en
+      # Switch to Chinese
+    - name: 简体中文
+      link: <https://zehyrw.github.io>/de/
+      lang: zh
+      # Switch to Japanese
+    - name: 日本語
+      link: <https://zehyrw.github.io>/ja/
+      lang: ja 
+
+repo_url: https://github.com/ZehyrW 右上角点击跳转的链接
+repo_name: ZehyrW(Wang Zhuo) # 右上角的名字
+
+copyright: Copyright &copy; 2024 Whu-WWZ
+
+# [Extensions]
+plugins:
+  - search: # 现在还不支持中文搜索 支持之后可以设置语言
+    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+      separator: '[\s\u200b\-]'
+      lang:
+        - en
+        - ja
+  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+
+
+markdown_extensions:
+  - pymdownx.arithmatex: # 数学公式支持
+      generic: true
+  - attr_list # 给图片后面添加{width="300"}设置大小
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      # linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
+  - pymdownx.details # admonition需要
+
+extra_javascript:
+  # 数学公式支持
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - mkdocs/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
