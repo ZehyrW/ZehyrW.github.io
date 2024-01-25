@@ -12,11 +12,15 @@ nav:
   - 大三下: 课程资料/大三下/index.md
 - 保研: 
   - 24届信息收集: 
+    - 保研/24届信息收集/写在前面.md
     - T0院校: 保研/24届信息收集/T0院校/T0.md
-    - 华五: 保研/24届信息收集/华五/华五.md
-    - 中流985: 保研/24届信息收集/中流985/中流985.md
+    - 华五院校: 保研/24届信息收集/华五/华五.md
+    - 985-A/B: 保研/24届信息收集/985-A&B/其余985.md
   - 机试准备: 保研/机试准备/index.md
-  - 夏令营\预推免: 保研/夏令营&预推免/index.md
+  - 夏令营/预推免: 
+    - 夏令营: 保研/夏令营&预推免/夏令营/夏令营.md
+    - 预推免: 保研/夏令营&预推免/预推免/预推免.md
+  - 经验帖: 保研/经验帖/index.md
 - 关于我: 关于我/About_me.md
 
 
@@ -85,6 +89,7 @@ extra:
     - name: 日本語
       link: https://zehyrw.github.io
       lang: ja 
+  generator: false
 
 repo_url: https://github.com/ZehyrW
 repo_name: ZehyrW(Wang Zhuo) # 右上角的名字
@@ -143,6 +148,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - footnotes
 
 extra_javascript:
   # 数学公式支持

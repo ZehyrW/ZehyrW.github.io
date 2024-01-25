@@ -2,9 +2,9 @@
 > 更新于 2024.1.25
 ## 1. 教育经历🏫
 
-**High School（2018 - 2021）：** [华中师范大学第一附属中学](https://www.hzsdyfz.com.cn/about.html) <br>
+**High School（2018 - 2021）：** [**华中师范大学第一附属中学**](https://www.hzsdyfz.com.cn/about.html) <br>
 
-**University（2021 - 至今）：** [武汉大学](https://www.whu.edu.cn/)     &ensp;&ensp;**Major：** 网络空间安全
+**University（2021 - 至今）：** [**武汉大学**](https://www.whu.edu.cn/)     &ensp;&ensp;**Major：** 网络空间安全
 
 ## 2. 我的大学🎓
 
