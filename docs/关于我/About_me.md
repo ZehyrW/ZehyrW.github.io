@@ -27,7 +27,7 @@
 
 > 不过从23级开始 培养方案发生了新变化 具体可去[**学院官网**](https://cse.whu.edu.cn/)查找
 
-其余一些课程情况就不过多说了，感觉每一届情况不能相提并论，不过选课之前还是要了解一下大致情况的😋多问问学长学姐（
+其余一些课程情况就不过多说了，感觉每一届情况不能相提并论，不过选课之前还是要了解一下大致情况的😋多问问学长学姐:）
 
 ### 竞赛成果
 
@@ -41,9 +41,25 @@
     <img src="figs/%E6%95%B0%E6%A8%A1%E5%9B%BD%E4%BA%8C.JPG" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
   </center>
 
- > 感觉网安专业打数模比较顺手，毕竟安全专业❌AI专业✔️
+ > 感觉网安专业打数模比较顺手，毕竟安全专业❌AI专业✔️<br>
+ > 提供一些数模的学习视频：[**清风数模学习视频**](https://www.youtube.com/@user-in3nl7rt5w)、[**数学建模老哥**](https://space.bilibili.com/400575790/channel/series)
+
+ * 蓝桥杯py组
+ * 大挑-学术作品赛
+ * 小挑
+ * 计设
+
+> 但愿能获奖hhh
 
 To be continue...
+
+### 科研经历
+大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何坤** 老师。老师人很好，不过没啥成果出来，研究了一下联邦学习的东西。。。希望后面能有一篇ccf论文出来
+
+## 3. 未来期望🕊️
+
+
+
 
 
 
