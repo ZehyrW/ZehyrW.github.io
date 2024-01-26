@@ -56,6 +56,11 @@ theme:
     - navigation.tabs
     # - navigation.sections
     # - toc.integrate
+    - navigation.footer
+    - navigation.top
+    - navigation.sections
+    - content.action.edit
+    - content.tabs.link
     - search.suggest
     - search.highlight
     - search.share
