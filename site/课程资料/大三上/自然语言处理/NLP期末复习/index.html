@@ -1,0 +1,3295 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="王卓的个人网站">
+      
+      
+        <meta name="author" content="王卓">
+      
+      
+        <link rel="canonical" href="https://zehyrw.github.io/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/NLP%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">
+      
+      
+        <link rel="prev" href="../../../..">
+      
+      
+        <link rel="next" href="../../../%E5%A4%A7%E4%B8%89%E4%B8%8B/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/博客.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>自然语言处理 - WHU-WWZ Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CPlayfair+Display:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Playfair Display"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../../mkdocs/css/no-footer.css">
+    
+      <link rel="stylesheet" href="../../../../mkdocs/css/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nlp" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="WHU-WWZ Website" class="md-header__button md-logo" aria-label="WHU-WWZ Website" data-md-component="logo">
+      
+  <img src="../../../../assets/官方网站.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WHU-WWZ Website
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              自然语言处理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="亮色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="亮色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="暗色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="暗色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://zehyrw.github.io" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://zehyrw.github.io" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://zehyrw.github.io" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZehyrW" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZehyrW(Wang Zhuo)
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  课程资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-tabs__link">
+          
+  
+  保研
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../%E5%85%B3%E4%BA%8E%E6%88%91/About_me/" class="md-tabs__link">
+        
+  
+    
+  
+  关于我
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="WHU-WWZ Website" class="md-nav__button md-logo" aria-label="WHU-WWZ Website" data-md-component="logo">
+      
+  <img src="../../../../assets/官方网站.png" alt="logo">
+
+    </a>
+    WHU-WWZ Website
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZehyrW" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZehyrW(Wang Zhuo)
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    课程资料
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大三上
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            大三上
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    自然语言处理
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    自然语言处理
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part1：词法分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part1：词法分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      分词
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      词性标注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      词义排歧
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part2 句法分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part2 句法分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      句法结构（可能出简答题）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      依存结构（要掌握）简答题？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part3：词向量、语言模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part3：词向量、语言模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      词向量的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      语言模型的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word2vec" class="md-nav__link">
+    <span class="md-ellipsis">
+      word2vec模型架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      训练词向量的原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part4：信息抽取（方案设计）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part4：信息抽取（方案设计）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      关系抽取的概念（会用神经网络构建关系抽取系统）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      实体识别的概念（会用神经网络构建实体识别系统）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      前馈神经网络、卷积神经网络、循环神经网络、LSTM的模型架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意力的运算过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      信息抽取系统的评估（注重评价指标的应用场景！）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part5：情感分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part5：情感分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aespect" class="md-nav__link">
+    <span class="md-ellipsis">
+      aespect情感分析的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      用神经网络构建情感分析系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part6：篇章分析（简答）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part6：篇章分析（简答）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rst" class="md-nav__link">
+    <span class="md-ellipsis">
+      理解修辞结构理论（RST）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edu" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础语篇单位（EDU）指什么
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nucleussatellite" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心（nucleus）和卫星（satellite）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part7：自然语言生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part7：自然语言生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#s2s" class="md-nav__link">
+    <span class="md-ellipsis">
+      自然语言生成模型的架构（s2s模型）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的训练目标函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beam-search-top-k-top-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的解码算法：beam-search、 top-k采样、 top-p采样
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成模型的解码算法：beam-search、 top-k采样、 top-p采样">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beam-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      beam-search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      top-k采样
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      top-p采样
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleurouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的评估： BLEU、ROUGE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      用神经网络构建文本生成系统（感觉今年肯定会考！）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part8：预训练模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part8：预训练模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transformers2s-with-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      transformer架构：（s2s with attention）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他相关的
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bert" class="md-nav__link">
+    <span class="md-ellipsis">
+      bert架构、预训练任务、什么是精调
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      gpt-1架构、预训练任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      其余的大模型相关概念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些常见模型架构图
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一些常见模型架构图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lstm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atae-lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATAE-LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bi-lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      BI-LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    <span class="md-ellipsis">
+      2019级试卷整理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2019级试卷整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      名词解释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      简答题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      方案设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020级试卷整理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2020级试卷整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      名词解释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      简答题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      方案设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%A4%A7%E4%B8%89%E4%B8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大三下
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    保研
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            保研
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    24届信息收集
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            24届信息收集
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    写在前面
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/T0%E9%99%A2%E6%A0%A1/T0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T0院校
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%8D%8E%E4%BA%94/%E5%8D%8E%E4%BA%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    华五院校
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/985-A%26B/%E5%85%B6%E4%BD%99985/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    985-A/B
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    机试准备
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            机试准备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E6%9C%BA%E8%AF%95%E5%87%86%E5%A4%87/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    写在前面
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E6%9C%BA%E8%AF%95%E5%87%86%E5%A4%87/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E9%83%A8%E5%88%86/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E9%83%A8%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础算法部分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E6%9C%BA%E8%AF%95%E5%87%86%E5%A4%87/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%83%A8%E5%88%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%83%A8%E5%88%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构部分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    夏令营/预推免
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            夏令营/预推免
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E5%A4%8F%E4%BB%A4%E8%90%A5%26%E9%A2%84%E6%8E%A8%E5%85%8D/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    写在前面
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E5%A4%8F%E4%BB%A4%E8%90%A5%26%E9%A2%84%E6%8E%A8%E5%85%8D/%E5%A4%8F%E4%BB%A4%E8%90%A5/%E5%A4%8F%E4%BB%A4%E8%90%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    夏令营
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E5%A4%8F%E4%BB%A4%E8%90%A5%26%E9%A2%84%E6%8E%A8%E5%85%8D/%E9%A2%84%E6%8E%A8%E5%85%8D/%E9%A2%84%E6%8E%A8%E5%85%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    预推免
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BF%9D%E7%A0%94/%E7%BB%8F%E9%AA%8C%E5%B8%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    经验帖
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%85%B3%E4%BA%8E%E6%88%91/About_me/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于我
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part1：词法分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part1：词法分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      分词
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      词性标注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      词义排歧
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part2 句法分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part2 句法分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      句法结构（可能出简答题）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      依存结构（要掌握）简答题？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part3：词向量、语言模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part3：词向量、语言模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      词向量的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      语言模型的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word2vec" class="md-nav__link">
+    <span class="md-ellipsis">
+      word2vec模型架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      训练词向量的原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part4：信息抽取（方案设计）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part4：信息抽取（方案设计）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      关系抽取的概念（会用神经网络构建关系抽取系统）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      实体识别的概念（会用神经网络构建实体识别系统）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      前馈神经网络、卷积神经网络、循环神经网络、LSTM的模型架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意力的运算过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      信息抽取系统的评估（注重评价指标的应用场景！）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part5：情感分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part5：情感分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aespect" class="md-nav__link">
+    <span class="md-ellipsis">
+      aespect情感分析的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      用神经网络构建情感分析系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part6：篇章分析（简答）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part6：篇章分析（简答）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rst" class="md-nav__link">
+    <span class="md-ellipsis">
+      理解修辞结构理论（RST）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edu" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础语篇单位（EDU）指什么
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nucleussatellite" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心（nucleus）和卫星（satellite）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part7：自然语言生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part7：自然语言生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#s2s" class="md-nav__link">
+    <span class="md-ellipsis">
+      自然语言生成模型的架构（s2s模型）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的训练目标函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beam-search-top-k-top-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的解码算法：beam-search、 top-k采样、 top-p采样
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成模型的解码算法：beam-search、 top-k采样、 top-p采样">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beam-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      beam-search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      top-k采样
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      top-p采样
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleurouge" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成模型的评估： BLEU、ROUGE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      用神经网络构建文本生成系统（感觉今年肯定会考！）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part8：预训练模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part8：预训练模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transformers2s-with-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      transformer架构：（s2s with attention）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他相关的
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bert" class="md-nav__link">
+    <span class="md-ellipsis">
+      bert架构、预训练任务、什么是精调
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      gpt-1架构、预训练任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      其余的大模型相关概念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些常见模型架构图
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一些常见模型架构图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lstm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atae-lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATAE-LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bi-lstm" class="md-nav__link">
+    <span class="md-ellipsis">
+      BI-LSTM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CNN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    <span class="md-ellipsis">
+      2019级试卷整理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2019级试卷整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      名词解释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      简答题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      方案设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020级试卷整理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2020级试卷整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      名词解释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      简答题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      方案设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ZehyrW/edit/master/docs/课程资料/大三上/自然语言处理/NLP期末复习.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="nlp">NLP期末复习<a class="headerlink" href="#nlp" title="Permanent link">&para;</a></h1>
+<h2 id="part1">Part1：词法分析<a class="headerlink" href="#part1" title="Permanent link">&para;</a></h2>
+<h4 id="_1">分词<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>解释</strong>：将句子、段落等文本分解为有意义的字词单元，方便后续的处理分析</p>
+</li>
+<li>
+<p><strong>分词算法</strong>（可能考）：</p>
+</li>
+<li>
+<p>最大匹配法：从左到右匹配词库中的单词，匹配到最长的词为止</p>
+<blockquote>
+<p>缺点：</p>
+<p>1.完全依赖词典</p>
+<p>2.没有基于文本语义的理解，消歧能力弱</p>
+</blockquote>
+</li>
+<li>
+<p>最大概率法：见nlp资料</p>
+</li>
+</ul>
+<blockquote>
+<p>上面两个都是查词典法</p>
+</blockquote>
+<p><strong>构造词典的方法</strong>：</p>
+<ul>
+<li>前缀树</li>
+</ul>
+<p><img src="figs\image-20240104164430787.png" style="zoom:50%;" /></p>
+<p>每个结点包含一个字符；   从root到某结点，构成字符串；    结点的子结点不相同</p>
+<ul>
+<li>AC自动机</li>
+</ul>
+<p><img src=" figs\image-20240104165310635.png" alt="image-20240104165310635" style="zoom:80%;" /></p>
+<hr />
+<ul>
+<li>序列标注法：没有</li>
+</ul>
+<p><img alt="image-20240104171022697" src="../figs/image-20240104171022697.png" /></p>
+<ul>
+<li>
+<p>N-最短路径法：没有</p>
+</li>
+<li>
+<p><strong>新词发现算法</strong>：</p>
+<p><img src=" figs\image-20240104170515771.png" alt="image-20240104170515771" style="zoom:50%;" /></p>
+<blockquote>
+<p>其中的词频、自由度、凝固度的计算如下。选取abc作为文本文段。</p>
+</blockquote>
+<p><img src=" figs\image-20240104170624109.png" alt="image-20240104170624109" style="zoom:50%;" /></p>
+<p>新词发现的必要性：未登录词
+计算候选词的频率，凝固度（互信息），自由度（信息熵）作为特征：<strong>无监督</strong>
+特征高于阈值的候选词，作为结果词，阈值需要人工调节
+结果词和词典对比，不在词典的词作为新词</p>
+</li>
+</ul>
+<h4 id="_2">词性标注<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>解释</strong>：·就是在给定句子中判定每个词的语法范畴，确定其词性和浅层的歧义消除。并加以标注的过程</p>
+</li>
+<li>
+<p><strong>基于HMM的词性标注</strong>：（可能算法题）</p>
+</li>
+<li>
+<p>参数：</p>
+</li>
+</ul>
+<p><img src=" figs\image-20240104172227501.png" alt="image-20240104172227501" style="zoom: 67%;" /></p>
+<ul>
+<li>转移概率：(隐含状态之间存在转换概率)</li>
+</ul>
+<p><img src=" figs\image-20240104172323849.png" alt="image-20240104172323849" style="zoom:67%;" /></p>
+<ul>
+<li>发射概率：（隐含状态与可见状态之间的概率）</li>
+</ul>
+<p><img src=" figs\image-20240104172427543.png" alt="image-20240104172427543" style="zoom: 50%;" /></p>
+<ul>
+<li>进行预测（维特比算法 无环有向图最优路径算法）</li>
+</ul>
+<p><img src=" figs\image-20240104173432929.png" alt="image-20240104173432929" style="zoom:67%;" /></p>
+<ul>
+<li>
+<p>HMM的应用</p>
+<p>中文分词    实体识别</p>
+</li>
+<li>
+<p>伪代码实现</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nl">定义HMM模型</span><span class="p">:</span>
+<span class="w">   </span><span class="n">S</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">s1</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">sm</span><span class="p">]</span><span class="w">  </span><span class="c1">// 状态集合</span>
+<span class="w">   </span><span class="n">O</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">o1</span><span class="p">,</span><span class="w"> </span><span class="n">o2</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">on</span><span class="p">]</span><span class="w">  </span><span class="c1">// 观测集合</span>
+<span class="w">   </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">a11</span><span class="p">,</span><span class="w"> </span><span class="n">a12</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">a1m</span><span class="p">],</span>
+<span class="w">        </span><span class="p">[</span><span class="n">a21</span><span class="p">,</span><span class="w"> </span><span class="n">a22</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">a2m</span><span class="p">],</span>
+<span class="w">        </span><span class="p">...,</span>
+<span class="w">        </span><span class="p">[</span><span class="n">am1</span><span class="p">,</span><span class="w"> </span><span class="n">am2</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">amm</span><span class="p">]]</span><span class="w">  </span><span class="c1">// 状态转移概率矩阵</span>
+<span class="w">   </span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">b1</span><span class="p">(</span><span class="n">o1</span><span class="p">),</span><span class="w"> </span><span class="n">b2</span><span class="p">(</span><span class="n">o1</span><span class="p">),</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">bm</span><span class="p">(</span><span class="n">o1</span><span class="p">)],</span>
+<span class="w">        </span><span class="p">[</span><span class="n">b1</span><span class="p">(</span><span class="n">o2</span><span class="p">),</span><span class="w"> </span><span class="n">b2</span><span class="p">(</span><span class="n">o2</span><span class="p">),</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">bm</span><span class="p">(</span><span class="n">o2</span><span class="p">)],</span>
+<span class="w">        </span><span class="p">...,</span>
+<span class="w">        </span><span class="p">[</span><span class="n">b1</span><span class="p">(</span><span class="n">on</span><span class="p">),</span><span class="w"> </span><span class="n">b2</span><span class="p">(</span><span class="n">on</span><span class="p">),</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">bm</span><span class="p">(</span><span class="n">on</span><span class="p">)]]</span><span class="w">  </span><span class="c1">// 观测概率矩阵</span>
+
+<span class="w">   </span><span class="n">Algorithm</span><span class="w"> </span><span class="n">Viterbi</span><span class="p">(</span><span class="n">O</span><span class="p">,</span><span class="w"> </span><span class="n">S</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">)</span><span class="o">:</span>
+<span class="w">       </span><span class="nl">Input</span><span class="p">:</span><span class="w"> </span><span class="n">观测序列</span><span class="w"> </span><span class="n">O</span><span class="p">,</span><span class="w"> </span><span class="n">状态集合</span><span class="w"> </span><span class="n">S</span><span class="p">,</span><span class="w"> </span><span class="n">状态转移概率矩阵</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">观测概率矩阵</span><span class="w"> </span><span class="n">B</span>
+<span class="w">       </span><span class="nl">Output</span><span class="p">:</span><span class="w"> </span><span class="n">最可能的状态序列</span><span class="w"> </span><span class="n">S</span><span class="o">*</span>
+
+<span class="w">       </span><span class="nl">初始化</span><span class="p">:</span>
+<span class="w">           </span><span class="k">for</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">S</span><span class="o">:</span>
+<span class="w">               </span><span class="n">delta</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">si</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pi</span><span class="p">(</span><span class="n">si</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">si</span><span class="p">][</span><span class="n">o1</span><span class="p">]</span><span class="w"> </span><span class="c1">//初始概率</span>
+
+<span class="w">       </span><span class="nl">递推</span><span class="p">:</span>
+<span class="w">           </span><span class="k">for</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">n</span><span class="o">:</span>
+<span class="w">               </span><span class="k">for</span><span class="w"> </span><span class="n">each</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="n">sj</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">S</span><span class="o">:</span>
+<span class="w">                   </span><span class="n">delta</span><span class="p">[</span><span class="n">t</span><span class="p">][</span><span class="n">sj</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">delta</span><span class="p">[</span><span class="n">t</span><span class="mi">-1</span><span class="p">][</span><span class="n">si</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">si</span><span class="p">][</span><span class="n">sj</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">sj</span><span class="p">][</span><span class="n">ot</span><span class="p">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">S</span><span class="p">)</span>
+<span class="w">                   </span><span class="n">psi</span><span class="p">[</span><span class="n">t</span><span class="p">][</span><span class="n">sj</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argmax</span><span class="p">(</span><span class="n">delta</span><span class="p">[</span><span class="n">t</span><span class="mi">-1</span><span class="p">][</span><span class="n">si</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">si</span><span class="p">][</span><span class="n">sj</span><span class="p">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">S</span><span class="p">)</span>
+
+<span class="w">       </span><span class="nl">回溯</span><span class="p">:</span>
+<span class="w">           </span><span class="n">S</span><span class="o">*</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">argmax</span><span class="p">(</span><span class="n">delta</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">si</span><span class="p">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">S</span><span class="p">)]</span>
+<span class="w">           </span><span class="k">for</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span>
+<span class="w">               </span><span class="n">S</span><span class="o">*</span><span class="p">[</span><span class="n">t</span><span class="mi">-1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">psi</span><span class="p">[</span><span class="n">t</span><span class="p">][</span><span class="n">S</span><span class="o">*</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
+
+<span class="w">       </span><span class="n">Return</span><span class="w"> </span><span class="n">S</span><span class="o">*</span>
+</code></pre></div>
+<blockquote>
+<p>看作给定观测值（词），求隐状态（词性）的问题</p>
+</blockquote>
+<h4 id="_3">词义排歧<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>解释</strong>：确定一个歧义词的哪一种语义在一个特殊的使用环境中被调用</li>
+</ul>
+<p><img src=" figs\image-20240104181924819.png" alt="image-20240104181924819" style="zoom: 33%;" /></p>
+<h2 id="part2">Part2 句法分析<a class="headerlink" href="#part2" title="Permanent link">&para;</a></h2>
+<h4 id="_4">句法结构（可能出简答题）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>句法成分树</li>
+</ul>
+<p><img src=" figs\format,png" alt="img" style="zoom:50%;" /></p>
+<ul>
+<li>节点是什么？边代表什么意思？</li>
+</ul>
+<p>节点表示**句子中的成分**，边表示不同节点（成分）之间的**句法关系**</p>
+<p>通常有两种主要类型的节点：短语节点（Phrase Node）和词汇节点（Lexical Node）。</p>
+<ol>
+<li><strong>短语节点（Phrase Node）</strong>：这些节点表示句子中的短语或成分，如名词短语（NP）、动词短语（VP）、介词短语（PP）等。短语节点可以包含其他短语节点或词汇节点作为其子节点，从而形成嵌套的结构。</li>
+<li><strong>词汇节点（Lexical Node）</strong>：这些节点表示句子中的单词或词汇项。词汇节点是句法成分树的叶子节点，它们没有子节点。</li>
+</ol>
+<p>边表示不同节点之间的句法关系，通常有以下一些常见的关系：</p>
+<ul>
+<li><strong>父子关系（Parent-Child Relationship）</strong>：边从一个节点指向其子节点，表示这两个节点之间是一个父子关系。例如，一个动词短语节点可能有若干个名词短语节点作为子节点。</li>
+<li><strong>修饰关系（Modifier Relationship）</strong>：边表示一个节点对另一个节点的修饰关系。例如，一个形容词短语节点可能通过边与一个名词节点相连，表示形容词修饰了名词。</li>
+<li><strong>并列关系（Coordination Relationship）</strong>：边表示两个节点处于并列关系。例如，两个名词短语节点通过边相连，表示它们在结构上是并列的。</li>
+</ul>
+<h4 id="_5">依存结构（要掌握）简答题？<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>依存树</li>
+</ul>
+<p><img src=" figs\v2-0bc54788687c714d12f467dd91aa385e_720w.webp" alt="img" style="zoom:50%;" /></p>
+<ul>
+<li>节点是什么？边代表什么意思？</li>
+</ul>
+<p>在依存树中，节点表示**句子中的词语**，而边表示词语之间的**依存关系**。</p>
+<ol>
+<li>每个节点代表句子中的一个词语。这个词语通常是句子的一个单词，可能包括标点符号。节点可以携带附加信息，如词性标签、词汇性质等。</li>
+<li>每条边表示两个词语之间的依存关系。在依存树中，依存关系通常分为两种类型：</li>
+<li><strong>标签化依存关系（Labeled Dependency Relation）</strong>：每条边上带有一个标签，表示依存关系的具体类型。例如，一个名词可能依赖于一个动词，标签可以表示这是一个主谓关系（nsubj）。</li>
+<li><strong>无标签依存关系（Unlabeled Dependency Relation）</strong>：边没有附加标签，只表示两个词语之间存在依存关系，但不具体说明是什么类型的依存关系。</li>
+</ol>
+<h2 id="part3">Part3：词向量、语言模型<a class="headerlink" href="#part3" title="Permanent link">&para;</a></h2>
+<h4 id="_6">词向量的概念<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>解释</strong>：将一个词映射到一个向量空间，用多维向量来表示</li>
+</ul>
+<h4 id="_7">语言模型的概念<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>解释</strong>： 给定上下文，去预测下面一个词或者一段文本出现的概率</li>
+</ul>
+<p><img src=" figs\image-20240104200553550.png" alt="image-20240104200553550" style="zoom:67%;" /></p>
+<p><strong>零概率问题</strong>：</p>
+<p>由于数据稀疏造成，在训练集中而未在测试集中出现的n元短语，会造成含有该短语的句子的出现概率为0</p>
+<p>语言模型的参数就是**词的概率以及给定前几个词情况下的条件概率**</p>
+<p><strong>神经网络与传统语言模型</strong>：</p>
+<p><img src=" figs\image-20240104201114804.png" alt="image-20240104201114804" style="zoom:67%;" /></p>
+<h4 id="word2vec">word2vec模型架构<a class="headerlink" href="#word2vec" title="Permanent link">&para;</a></h4>
+<p><strong>两种无监督训练方法</strong>（模型要能画出来）</p>
+<ul>
+<li>倒三角架构（CBOW）</li>
+</ul>
+<p><img src=" figs\image-20240104201257653.png" alt="image-20240104201257653" style="zoom: 67%;" /></p>
+<p><strong>功能</strong>：通过上下文预测当前词出现的概率</p>
+<ul>
+<li>三角架构（skip-gram）</li>
+</ul>
+<p><img src=" figs\image-20240104202213691.png" alt="image-20240104202213691" style="zoom:67%;" /></p>
+<p><strong>功能</strong>：通过当前词预测上下文</p>
+<p>简答？</p>
+<p><strong>简述两种方式训练词向量的区别</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>CBOW</th>
+<th>Skip-gram</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>输入</strong></td>
+<td>上下文词（多个）</td>
+<td>目标词</td>
+</tr>
+<tr>
+<td><strong>输出</strong></td>
+<td>目标词的概率分布</td>
+<td>上下文词的概率分布</td>
+</tr>
+<tr>
+<td><strong>训练数据样本</strong></td>
+<td>(上下文, 目标词)</td>
+<td>(目标词, 上下文词)</td>
+</tr>
+<tr>
+<td><strong>训练效果</strong></td>
+<td>小规模数据集效果较好</td>
+<td>大规模数据集效果较好</td>
+</tr>
+<tr>
+<td><strong>数据利用率</strong></td>
+<td>利用上下文信息进行训练</td>
+<td>通过目标词生成多个训练样本</td>
+</tr>
+<tr>
+<td><strong>计算效率</strong></td>
+<td>相对较快，因为考虑整个上下文的信息</td>
+<td>相对较慢，因为需要生成多个样本</td>
+</tr>
+</tbody>
+</table>
+<p>算法？</p>
+<ul>
+<li><strong>CBOW</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">Algorithm</span><span class="w"> </span><span class="n">CBOW</span><span class="o">:</span>
+<span class="w">   </span><span class="nl">Input</span><span class="p">:</span><span class="w"> </span><span class="n">句子数据集</span><span class="p">(</span><span class="n">dataset_s</span><span class="p">),</span><span class="w"> </span><span class="n">窗口大小</span><span class="p">(</span><span class="n">window_size</span><span class="p">)</span>
+<span class="w">   </span><span class="nl">Output</span><span class="p">:</span><span class="w"> </span><span class="n">Trained</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="n">vectors</span>
+
+<span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="n">sentence</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">dataset_s</span><span class="o">:</span>
+<span class="w">       </span><span class="k">for</span><span class="w"> </span><span class="n">target_word_index</span><span class="p">,</span><span class="w"> </span><span class="n">target_word</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">enumerate</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">:</span>
+<span class="w">           </span><span class="n">context_words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_context_words</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span><span class="w"> </span><span class="n">target_word_index</span><span class="p">,</span><span class="w"> </span><span class="n">window_size</span><span class="p">)</span>
+
+<span class="w">           </span><span class="n">input_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="p">([</span><span class="n">one_hot</span><span class="p">(</span><span class="n">context_word</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">context_word</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">context_words</span><span class="p">])</span>
+<span class="w">           </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">one_hot</span><span class="p">(</span><span class="n">target_word</span><span class="p">)</span>
+
+<span class="w">           </span><span class="cp"># 梯度下降函数</span>
+<span class="w">           </span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">input_data</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+
+<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="n">trained</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="n">vectors</span>
+</code></pre></div>
+<ul>
+<li><strong>SKIP- GRAM</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">sentence</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">dataset_s</span><span class="o">:</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">enumerate</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">:</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">target_word</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">enumerate</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">:</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">j</span><span class="o">:</span>
+<span class="w">                </span><span class="k">continue</span>
+<span class="w">            </span><span class="n">input_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">one_hot</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+<span class="w">            </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">one_hot</span><span class="p">(</span><span class="n">target_word</span><span class="p">)</span>
+
+<span class="w">            </span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">input_data</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+</code></pre></div>
+<p>方案设计？</p>
+<h4 id="_8">训练词向量的原理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p><strong>原理</strong>：把每个词表征为k维的实数向量（每个实数都对应着一个特征，可以是和其他单词之间的联系），将相似的单词分组映射到向量空间的不同部分，拥有差不多上下文的两个单词的意思往往是相近的</p>
+<p>训练原理：</p>
+<ol>
+<li><strong>CBOW (Continuous Bag of Words)：</strong></li>
+<li><strong>输入：</strong> 给定上下文窗口内的词语（上下文词），尝试预测目标词（中心词）。</li>
+<li><strong>输出：</strong> 目标词的概率分布，表示在给定上下文条件下，目标词的可能性。</li>
+<li>步骤：<ul>
+<li>将上下文词的词向量进行平均或求和，得到上下文的表示。</li>
+<li>将上下文表示作为输入，通过softmax函数预测目标词的概率分布。</li>
+<li>最小化损失函数，使得模型的预测概率尽可能接近实际目标词的分布。</li>
+</ul>
+</li>
+<li><strong>Skip-gram：</strong></li>
+<li><strong>输入：</strong> 给定目标词，尝试预测上下文词。</li>
+<li><strong>输出：</strong> 上下文词的概率分布，表示在给定目标词条件下，各个上下文词的可能性。</li>
+<li>步骤：<ul>
+<li>将目标词的词向量作为输入。</li>
+<li>通过softmax函数预测目标词的上下文词的概率分布。</li>
+<li>最小化损失函数，使得模型的预测概率尽可能接近实际上下文词的分布。</li>
+</ul>
+</li>
+</ol>
+<p>训练方法：</p>
+<ol>
+<li><strong>Negative Sampling：</strong> 为了加速训练过程，Word2Vec使用了负采样（Negative Sampling）的技术。在每次训练迭代中，对每个正例样本（目标词-上下文词对），随机选择一小部分负例样本（不包含在上下文窗口内的词），通过负例样本的预测来进行梯度更新，以降低计算成本。</li>
+<li><strong>层次化Softmax：</strong> 在大词汇量的情况下，计算全局的Softmax损失可能会很耗时。为了解决这个问题，Word2Vec引入了层次化Softmax，使用树状结构来表示词汇，降低了计算复杂度。</li>
+<li><strong>学习率调整：</strong> Word2Vec通常使用学习率逐渐减小的策略，例如，初始时较大的学习率，然后随着训练的进行逐渐减小，以更好地收敛模型。</li>
+</ol>
+<p>Word2Vec通过这样的训练过程，使得词汇中的每个词都能够在向量空间中得到一个连续分布的表示，能够捕捉到词语之间的语义关系。这些学到的词向量可以应用于各种自然语言处理任务。</p>
+<h2 id="part4">Part4：信息抽取（方案设计）<a class="headerlink" href="#part4" title="Permanent link">&para;</a></h2>
+<h4 id="_9">关系抽取的概念（会用神经网络构建关系抽取系统）<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>： 识别文本中实体之间的关系，这些关系可以是预定义的、有结构的，也可以是任意的、无结构的。</p>
+<h4 id="_10">实体识别的概念（会用神经网络构建实体识别系统）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>：指识别文本中具有特定意义的实体，主要包括人名、地名、机构名、专有名词等。简单来说，就是识别自然文本中的实体指称的边界和类别。（从非结构化的输入文本中抽取实体）</p>
+<blockquote>
+<p>命名实体识别任务可以看作是序列标注任务</p>
+</blockquote>
+<h4 id="lstm">前馈神经网络、卷积神经网络、循环神经网络、LSTM的模型架构<a class="headerlink" href="#lstm" title="Permanent link">&para;</a></h4>
+<ul>
+<li>前馈神经网络</li>
+</ul>
+<p><strong>介绍：</strong> FNN是一种最基本的神经网络结构，由输入层、隐藏层和输出层组成。信息在网络中单向传播，没有反馈回路。</p>
+<p><strong>特点：</strong> 适用于处理静态数据，对于序列或时间相关的信息处理相对有限。</p>
+<p>就是循环神经网络单独的一层，就不多说了</p>
+<p><img alt="img" src="../figs/4e897c0cf84a14f4700f8267f31625cd.png" /></p>
+<ul>
+<li>卷积神经网络cnn</li>
+</ul>
+<p><strong>介绍：</strong> CNN主要用于图像处理任务，通过卷积层和池化层有效提取图像的特征。每个卷积核可以捕捉局部的空间特征，从而实现对图像的高效抽象。（输入-卷积-池化-全连接-输出）</p>
+<p><strong>特点：</strong> 在图像处理、计算机视觉领域表现出色，能够减少参数数量，对平移不变性有良好的处理能力。</p>
+<p><img alt="image-20240104212300944" src="../figs/image-20240104212300944.png" /></p>
+<p><img src=" figs\image-20240104213518255.png" alt="image-20240104213518255" style="zoom:80%;" /></p>
+<p>全连接层就是传统的全连接神经网络</p>
+<p>卷积核的特征提取能力（学习词和词的上下文特征）：多层级联实现多尺度特征学习（多个卷积层），同时能够减少训练参数</p>
+<p>池化层用来最大化主要特征（降维，获得定长特征向量），避免过拟合（有两种池化方式，一个是max-pooling，另外一个是average-pooling）</p>
+<p><strong>问题</strong>：</p>
+<p>水平方向延申， 隐层数量多，但是未考虑单个隐层在时间上的变化</p>
+<ul>
+<li>循环神经网络</li>
+</ul>
+<p><strong>介绍：</strong> RNN通过引入循环结构，能够处理序列数据。每个时间步 的隐藏状态会包含之前时间步的信息，使得网络能够考虑上下文信息。</p>
+<p><strong>特点：</strong> 适用于序列数据处理，但在长距离依赖关系和梯度消失问题上存在一定的挑战。</p>
+<p>看似级联，实则是沿着时序，建立了网络隐藏层之间的时序关联。每一时刻的状态s2不仅取决于当前时刻的输入，还取决于上一时刻s1的状态</p>
+<p><img alt="image-20240104215340160" src="../figs/image-20240104215340160.png" /></p>
+<p>训练方式和传统的神经网络一样，采用误差反向传播与梯度下降来更新权重</p>
+<ul>
+<li>lstm</li>
+</ul>
+<p><strong>介绍：</strong> LSTM是为解决RNN中长距离依赖和梯度消失问题而设计的。引入了门控机制，包括输入门、遗忘门和输出门，能够更好地捕捉长期依赖关系。</p>
+<p><strong>特点：</strong> 对于处理长序列、长距离依赖关系表现优异，解决了传统RNN的一些问题。</p>
+<p><img src=" figs\image-20240104220547138.png" alt="image-20240104220547138" style="zoom:67%;" /></p>
+<p>相较于rnn，lstm新增了时间链ct（相当于日记本，记录长时记忆）,与短时记忆st之间建立联系</p>
+<p><img src=" figs\image-20240104221027880.png" alt="image-20240104221027880" style="zoom:67%;" /></p>
+<p>f1是删除门：根据xt和st-1来过滤重要特征，忽略无关信息。记忆细胞中多少信息需要被删除</p>
+<p>f2是输入门：根据xt和st-1决定。多少信息添加到记忆细胞中</p>
+<p><strong>对比分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>特点</th>
+<th>FNN</th>
+<th>CNN</th>
+<th>RNN</th>
+<th>LSTM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数共享</td>
+<td>无参数共享</td>
+<td>卷积核参数共享</td>
+<td>时间步参数共享</td>
+<td>时间步参数共享，门控结构</td>
+</tr>
+<tr>
+<td>处理能力</td>
+<td>适用于静态数据</td>
+<td>适用于图像处理、计算机视觉</td>
+<td>适用于序列数据，但长距离依赖挑战</td>
+<td>适用于长序列、长距离依赖</td>
+</tr>
+<tr>
+<td>计算效率</td>
+<td>简单，计算效率高</td>
+<td>通过参数共享减少计算量</td>
+<td>存在时间步依赖，计算效率相对低</td>
+<td>相对于传统RNN，计算效率提高</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_11">注意力的运算过程<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>：将有限的注意力集中在重点信息上，从而节省资源，快速获得最有效的信息。</p>
+<p><img alt="Attention的位置" src="../figs/d3164-2019-11-07-weizhi.png" /></p>
+<p>注意力实际上就是**权重**</p>
+<p><img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
+<p>需要三个指定的输入Q(query)，K(key)，V(value)，然后通过公式得到注意力的计算结果，这个结果代表query在key和value作用下的表示。其中Q、K、V由输入X分别于其参数矩阵W、K、W 相乘得到</p>
+<p><img src=" figs\image-20240105233816142.png" alt="image-20240105233816142" style="zoom:50%;" /></p>
+<blockquote>
+<p>这其实是自注意力机制</p>
+</blockquote>
+<h4 id="_12">信息抽取系统的评估（注重评价指标的应用场景！）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p><strong>P 、 R 、F1</strong></p>
+<h2 id="part5">Part5：情感分析<a class="headerlink" href="#part5" title="Permanent link">&para;</a></h2>
+<h4 id="aespect">aespect情感分析的概念<a class="headerlink" href="#aespect" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>：一种细粒度的情感分析任务，旨在识别一条句子中一个指定方面 (Aspect)的情感极性。 </p>
+<blockquote>
+<p>因为一个句子中可能含有多个不同的方面，每个方面的情感极性可能不同。</p>
+</blockquote>
+<h4 id="_13">用神经网络构建情感分析系统<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p>ATAE-BILSTM（舆情实验课）</p>
+<h2 id="part6">Part6：篇章分析（简答）<a class="headerlink" href="#part6" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>掌握一个东西：NLP中如何表示一个篇章</p>
+</blockquote>
+<h4 id="rst">理解修辞结构理论（RST）<a class="headerlink" href="#rst" title="Permanent link">&para;</a></h4>
+<p>修辞结构理论是有关篇章分析和生成的理论</p>
+<p>该理论认为，连贯的篇章由不同层次的修辞关系组成，并且可以表示为一种**树形**结构。从篇章单位（EDU）开始，修辞结构树逐步覆盖整个篇章，形成层次化的篇章结构树。层次的复杂程度与篇章语义的复杂程度相关，语义越复杂，层次越多。如下所示。</p>
+<p><img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" /></p>
+<h4 id="edu">基础语篇单位（EDU）指什么<a class="headerlink" href="#edu" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>：基本篇章单元是句子内不重叠的文本片段</p>
+<p><img alt="img" src="../figs/v2-fd7fe81f15ba5bb1c95326544763ce72_720w.webp" /></p>
+<blockquote>
+<p>EDU 分割即“给定一个句子（任意语言），如何将它切割成若干个基本篇章单元“</p>
+</blockquote>
+<h4 id="nucleussatellite">核心（nucleus）和卫星（satellite）<a class="headerlink" href="#nucleussatellite" title="Permanent link">&para;</a></h4>
+<p>是两个篇章单位。</p>
+<p>**核心**是篇章最重要的部分，表示中心信息的单元，具有相对完整的语义。</p>
+<p>**卫星**是传达支撑信息的其他单元，用于补充说明核心部分，脱离核心的卫星部分通常是没有意义的。</p>
+<p>每个修辞关系可以联结两个或多个EDU。 最基本的修辞关系有两种，分别是**单核关系**和**多核关系**，篇章中单核关系占主要部分。</p>
+<ul>
+<li>
+<p>具有不对称性的核心-卫星关系nucleus-satellite relation， 也称单核关系，修辞关系联结的单元存在主次之别；</p>
+</li>
+<li>
+<p>无主次之分的多核关系 multinuclear relation，修饰关系联结的单元中无所谓谁是核心谁是卫星。 对比contrast关系和列表关系list都是典型的多核关系</p>
+</li>
+</ul>
+<p><img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 67%;" /></p>
+<p>大致来说，完成篇章分析步骤如下：</p>
+<ol>
+<li>篇章分成基础语篇单位EDU   </li>
+<li>判断每个EDU是核心还是卫星 </li>
+<li>根据核心和卫星的特征来判断修辞关系，特征可以是词性，依存关系等</li>
+<li>构建篇章结构树</li>
+</ol>
+<h2 id="part7">Part7：自然语言生成<a class="headerlink" href="#part7" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>几个重点： 摘要系统、机器翻译系统、对话系统</p>
+</blockquote>
+<h4 id="s2s">自然语言生成模型的架构（s2s模型）<a class="headerlink" href="#s2s" title="Permanent link">&para;</a></h4>
+<p><strong>解释</strong>：字面意思，输入一个序列，输出另一个序列，比如在机器翻译中，输入英文，输出中文。这种结构最重要的地方在于输入序列和输出序列的长度是可变的。而Seq2Seq模型也经常在输出的长度不确定时采用。</p>
+<p>seq2seq是一个**由两个循环神经网络RNN组成的端到端模型**：</p>
+<p>(1) 一个**编码器**(encoder)，将模型的输入序列作为输入，然后编码固定大小的“上下文向量”。</p>
+<p>(2) 一个**解码器**(decoder)，使用来自解码器生成的上下文向量作为从其生成输出序列的“种子”</p>
+<p><img alt="image-20240107190337618" src="../figs/image-20240107190337618.png" /></p>
+<blockquote>
+<p>此处encoder和decoder都是RNN，通常为lstm和gru</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>两种方式</strong></p>
+</li>
+<li>
+<p>语义向量不参与decoder</p>
+</li>
+</ul>
+<p><img src=" figs\image-20240109143740075.png" alt="image-20240109143740075" style="zoom:67%;" /></p>
+<p>encoder负责**将输入的文本序列压缩成指定长度的向量**，即语义向量C，这个向量可以看作输入序列的语义。</p>
+<p>decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输出序列。此时**上一时刻的输出会成为当**</p>
+<p><strong>前时刻的输入</strong>，而且语义向量C只作为初始状态参与运算，后面运算与C无关。</p>
+<ol>
+<li>语义向量参与decoder</li>
+</ol>
+<p><img src=" figs\image-20240109144014573.png" alt="image-20240109144014573" style="zoom:67%;" /></p>
+<p>**语义向量**C参与序列所有时刻的运算，上一时刻的输出仍然作为当前时刻的输入，但C参与每个时刻的运算。</p>
+<blockquote>
+<p>Decoder的每一次解码又会作为下一次解码的输入，但这样会导致一个问题，如果其中一个RNN单元解码出现误差，那么这个误差就会传递到下一个RNN单元，使训练结果误差越来越大。所以可以引入attention机制。</p>
+</blockquote>
+<h4 id="_14">生成模型的训练目标函数<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<p><img src=" figs\image-20240109144327953.png" alt="image-20240109144327953" style="zoom:67%;" /></p>
+<blockquote>
+<p>交叉熵损失</p>
+</blockquote>
+<h4 id="beam-search-top-k-top-p">生成模型的解码算法：beam-search、 top-k采样、 top-p采样<a class="headerlink" href="#beam-search-top-k-top-p" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>简答题？</p>
+</blockquote>
+<h5 id="beam-search">beam-search<a class="headerlink" href="#beam-search" title="Permanent link">&para;</a></h5>
+<p><strong>Beam Search只用于测试，不用于训练过程。</strong></p>
+<p>​   当模型训练好后，给其输入一段话，其输出的每个单元的 y 给的是各个词的概率，如何根据概率选词且如何判断是否句子终止呢？</p>
+<p>​   采取的方法是在每个时间步，选取当前时间步条件概率最大的k个词，作为该时间步的候选输出序列。如下图，k选择2，第一步p(A|c)和p(C|c)最大；第二步 P(AB|c),P(CE|c)最大；第三步P(ABD|c),P(CED|c)最大。这样，得到的最终候选序列就是各个时间步的得到的序列的集合，下图即为6个 {A, C, AB, CE,ABD, CED}。那么最终预测结果就是要从这6个中选出分最高的。按概率算的话，<strong>序列越长的概率肯定越小</strong>，所以一般最后分数计算会有一个和序列长度有关的惩罚系数，如下。</p>
+<p><img src=" figs\image-20240109144909651.png" alt="image-20240109144909651" style="zoom: 67%;" /></p>
+<h5 id="top-k">top-k采样<a class="headerlink" href="#top-k" title="Permanent link">&para;</a></h5>
+<p><strong>Top-k Sampling:</strong></p>
+<p><strong>基本思想：</strong> 在每个时间步，从模型生成的概率分布中选择概率最高的前k个词作为候选，然后</p>
+<p>从这些候选中随机选择一个作为生成的词。</p>
+<p><strong>优势：</strong> 引入了随机性，使得生成的序列更加多样化。</p>
+<p><strong>缺点：</strong> 可能导致一些不太可能的词被选中，从而生成不合理的序列。</p>
+<h5 id="top-p">top-p采样<a class="headerlink" href="#top-p" title="Permanent link">&para;</a></h5>
+<p><strong>Top-p Sampling:</strong></p>
+<p><strong>基本思想：</strong> 在每个时间步，从模型生成的概率分布中选择概率累积最高的一些词，直到累积概</p>
+<p>率超过阈值p。然后在这些词中随机选择一个作为生成的词。</p>
+<p><strong>优势：</strong> 可以在保持多样性的同时，更加控制生成的稳定性。</p>
+<p><strong>缺点：</strong> 可能导致生成相对较短的序列，因为累积概率很容易达到阈值。</p>
+<p>与 top-k 固定选取前 k 个 tokens 不同，top-p 选取的 tokens 数量不是固定的，这个方法是设定一个概率阈值。例如：将 top-p 设定为 0.15，即选择前 15% 概率的 tokens 作为候选。如下图所示，United 和 Netherlands 的概率加起来为 15% ，所以候选词就是这俩，最后再从这些候选词里，根据概率分数，选择 united 这个词。</p>
+<p><img src=" figs\image-20240109145152385.png" alt="image-20240109145152385" style="zoom:67%;" /></p>
+<h4 id="bleurouge">生成模型的评估： BLEU、ROUGE<a class="headerlink" href="#bleurouge" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>BLEU</strong></li>
+</ul>
+<p>是一种用于评估生成文本与参考（标准）文本之间相似度的指标，通常用于机器翻译等生成任务。BLEU（Bilingual Evaluation Understudy）的分数通常在0到1之间，但可能会偏向于接近0。BLEU的分数越高表示生成文本与参考文本越相似。理想情况下，最佳性能为1，表示生成文本完全与参考文本匹配。下面是BLEU计算的基本过程：</p>
+<ul>
+<li>
+<p><strong>N-gram计算</strong>：计算生成文本和参考文本中的n-gram（连续的n个词）的数量。通常，BLEU</p>
+<p>考虑1-gram到N-gram。很容易理解，就是像下面这样</p>
+<p><img src=" figs\image-20240109145648077.png" alt="image-20240109145648077" style="zoom:67%;" /></p>
+<blockquote>
+<p>一般情况1-gram可以代表原文有多少词被单独翻译出来，可以反映译文的**充分性**，2-gram以上可以反映译文的**流畅性**，它的值越高说明可读性越好</p>
+</blockquote>
+</li>
+</ul>
+<p><img src=" figs\image-20240109150002216.png" alt="image-20240109150002216" style="zoom: 67%;" /></p>
+<blockquote>
+<p>大致知道这个指标是干啥的就行 计算公式就算了。。。。</p>
+</blockquote>
+<ul>
+<li><strong>ROUGR</strong></li>
+</ul>
+<p>ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面向n元词召回率的评价方法。ROUGE准则由一系列的评价方法组成，包括ROUGE-N(N是n-gram中n，取值有1，2，3，4)，ROUGE-L，ROUGE-S, ROUGE-W，ROUGE-SU等。</p>
+<p><img src=" figs\image-20240109150233661.png" alt="image-20240109150233661" style="zoom:80%;" /></p>
+<blockquote>
+<p>可以看出，ROUGE与召回率的定义很相似。</p>
+</blockquote>
+<p>其余的指标就算了，也看不懂是啥。。。。</p>
+<h4 id="_15">用神经网络构建文本生成系统（感觉今年肯定会考！）<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<p>这个猜测就是叫用Transformer/GPT去构建？</p>
+<h2 id="part8">Part8：预训练模型<a class="headerlink" href="#part8" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>解释</strong>： 什么是预训练？使用大规模无人工标注的数据对模型进行自监督训练，从中提取出尽可能多的共性特征，从而让模型对特定任务的学习负担变轻</p>
+<p><strong>finetune</strong>：什么是微调？在下游任务上继续训练预训练模型</p>
+</blockquote>
+<h4 id="transformers2s-with-attention">transformer架构：（s2s with attention）<a class="headerlink" href="#transformers2s-with-attention" title="Permanent link">&para;</a></h4>
+<p><img alt="image-20240105203755634" src="../figs/image-20240105203755634.png" /></p>
+<p>​   Transformer 训练过程与 seq2seq 类似，首先 Encoder 端得到输入的 encoding 表示，并将其输入到 Decoder 端做交互式 attention，之后在 Decoder 端接收其相应的输入，经过多头 self-attention 模块之后，结合 Encoder 端的输出，再经过 FFN，得到 Decoder端的输出之后，最后经过一个线性全连接层，就可以通过 softmax 来预测下一个单词(token)，然后根据 softmax 多分类的损失函数，将 loss 反向传播即可，所以从整体上来说，Transformer训练过程就相当于一个有监督的多分类问题。需要注意的是，<strong>Encoder 端可以并行计算</strong>，一次性将输入序列全部 encoding 出来，但 Decoder端不是一次性把所有单词(token)预测出来的，而是像 seq2seq一样一个接着一个预测出来的。（BERT和GPT的特点）</p>
+<ul>
+<li>
+<p>encoder</p>
+</li>
+<li>
+<p>self-attention</p>
+</li>
+</ul>
+<p><img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" /></p>
+<p><img alt="image-20240107223823585" src="../figs/image-20240107223823585.png" /></p>
+<p>​ self-attention，是一种通过自身和自身相关联的 attention 机制，从而得到一个更好的representation 来表达自身，self-attention 可以看成一般 attention 的一种特殊情况。在 self-attention 中， Q=K=V,序列中的每个单词(token)和该序列中其余单词(token)进行 attention 计算。self-attention 的特点在于无视词(token)之间的距离直接计算依赖关系，从而能够学习到序列的内部结构。</p>
+<p>​ 引入 Self Attention 后会更容易**捕获句子中长距离的相互依赖的特征**，因为如果是**RNN 或者 LSTM，需要依次序序列计算，对于远距离的相互依赖的特征，要经过若干时间步步骤的信息累积才能将两者联系起来，而距离越远，有效捕获的可能性越小。**</p>
+<p>​ 但是 Self Attention 在计算过程中会直接将句子中任意两个单词的联系通过一个计算步骤直接联系起来，所以远距离依赖特征之间的距离被极大缩短，有利于有效地利用这些特征。除此外，Self Attention 对于增加计算的并行性也有直接帮助作用。</p>
+<ul>
+<li>multi-head self attention</li>
+</ul>
+<p><img alt="image-20240107224155258" src="../figs/image-20240107224155258.png" /></p>
+<p>​ 进行 Multi-head Attention 的原因是将模型分为多个头，形成多个子空间，可以让模型去关注不同方面的信息，最后再将各个方面的信息综合起来。其实直观上也可以想到，如果自己设计这样的一个模型，必然也不会只做一次 attention，多次 attention 综合的结果至少能够起到增强模型的作用，也可以类比 CNN 中同时使用多个卷积核的作用，直观上讲，多头的注意力有助于网络捕捉到更丰富的特征/信息。</p>
+<ul>
+<li>feed-forward</li>
+</ul>
+<p>由两个线性变换组成，中间有一个 ReLU 激活函数</p>
+<ul>
+<li>add&amp;norm</li>
+</ul>
+<p><img src=" figs\image-20240109151506070.png" alt="image-20240109151506070" style="zoom: 50%;" /></p>
+<p><img alt="image-20240107224930381" src="../figs/image-20240107224930381.png" /></p>
+<p><img src=" figs\image-20240109151557174.png" alt="image-20240109151557174" style="zoom: 80%;" /></p>
+<ul>
+<li>
+<p>decoder</p>
+</li>
+<li>
+<p>masked multi-head self attention</p>
+<p>多头 self-attention 模块与 Encoder 端的一致，但是需要注意的是 Decoder 端的多头 self-attention 需要做 mask，因为它在预测时，是“看不到未来的序列的”，所以要将当前预测的单词(token)及其之后的单词(token)全部 mask 掉</p>
+</li>
+<li>
+<p>encoder - decoder attention</p>
+<p>多头 Encoder-Decoder attention 交互模块的形式与多头 self-attention 模块一致，唯一不同的是其 矩阵的来源，其 矩阵来源于下面子模块的输出(对应到图中即为 masked 多头self-attention 模块经过 Add &amp; Norm 后的输出)，而矩阵则来源于整个 Encoder 端的输出，仔细想想其实可以发现，这里的交互模块就跟 seq2seq with attention 中的机制一样，目的就在于让 Decoder 端的单词(token)给予 Encoder 端对应的单词(token)“更多的关注(attention weight)”</p>
+</li>
+<li>
+<p>后面结构同encoder</p>
+</li>
+</ul>
+<h4 id="_16">其他相关的<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<ul>
+<li>与LSTM/RNN的对比分析</li>
+</ul>
+<p><img alt="image-20240107225217208" src="../figs/image-20240107225217208.png" /></p>
+<ul>
+<li>替代S2S？</li>
+</ul>
+<p>seq2seq 最大的问题在于将 Encoder 端的所有信息压缩到一个固定长度的向量中，并将其作为 Decoder 端首个隐藏状态的输入，来预测 Decoder 端第一个单词(token)的隐藏状态。在输入序列比较长的时候，这样做显然会损失 Encoder 端的很多信息，而且这样一股脑的把该固定向量送入Decoder 端，Decoder 端不能够关注到其想要关注的信息。上述两点都是 seq2seq 模型的缺点，后续工作虽然对 seq2seq 模型有了实质性的改进，但是由于主体模型仍然为 RNN(LSTM)系列的模型，因此模型的并行能力还是受限，而 transformer 不但对 seq2seq模型这两点缺点有了实质性的改进(多头交互式 attention 模块)，而且还引入了 self-attention模块，让源序列和目标序列首先“自关联”起来，这样的话，源序列和目标序列自身的embedding 表示所蕴含的信息更加丰富，而且后续的 FNN 层也增强了模型的表达能力，并且Transformer 并行计算的能力是远远超过 seq2seq 系列的模型。</p>
+<h4 id="bert">bert架构、预训练任务、什么是精调<a class="headerlink" href="#bert" title="Permanent link">&para;</a></h4>
+<ul>
+<li>架构</li>
+</ul>
+<p><img src=" figs\image-20240107204538064.png" alt="image-20240107204538064" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240107204646730.png" alt="image-20240107204646730" style="zoom:67%;" /></p>
+<p><img src=" figs\image-20240109151729680.png" alt="image-20240109151729680" style="zoom: 67%;" /></p>
+<ul>
+<li>预训练任务</li>
+</ul>
+<p>Maked LM 和 Next Sentence Prediction</p>
+<ul>
+<li>Maked LM</li>
+</ul>
+<blockquote>
+<p>给定一句话，随机 Mask 掉这句话中的一个或几个词，要求根据剩余词汇预测被 Mask 掉的几个词是什么</p>
+</blockquote>
+<p><img src=" figs\image-20240107202755895.png" alt="image-20240107202755895" style="zoom:50%;" /></p>
+<p>在一句话中随机选择 15%的词汇用于预测。对于原句中被 Mask 掉的词汇，80%的情况会使用一个特殊符号**[MASK]<strong>替换，10%的情况下采用一个**任意词**替换，剩余 10%情况下保持**原词汇不变</strong></p>
+<p>这么做的优点是：在后续微调的过程中，语句并不会出现[MASK]标记，当预测词汇时，模型并不知</p>
+<p>道输入对应位置的词汇是否为正确的词汇（10%的概率），这就迫使模型更多地依赖于上下文信息去</p>
+<p>预测词汇，并且赋予模型一定的纠错能力。缺点：由于每批次数据中，只有 15%的标记被预测，这意味着模型需要更多的预训练步骤来收敛。</p>
+<ul>
+<li>Next Sentence Prediction</li>
+</ul>
+<blockquote>
+<p>给定一篇文章中的两句话，判断第二句话在文本中是否紧跟在第一句话之后</p>
+</blockquote>
+<p><img src=" figs\image-20240107203235337.png" alt="image-20240107203235337" style="zoom:50%;" /></p>
+<p>实际上是段落重排序的简化版：只考虑两句话，判断是否是一篇文章中的前后句。在实际预训练过程中，文章作者从文本语料库中随机选择 50%正确语句对和 50%错误语句对进行训练，与 Masked LM 任务相结合，让模型能够更准确地刻画语句乃至整篇文章层面的语</p>
+<p>义信息。</p>
+<blockquote>
+<p><strong>通过这两个任务的联合学习，可以使得 Bert 学习到的表征既有 token 级别信息，同时也包含了句子级别的语义信息。</strong></p>
+</blockquote>
+<p><strong>猜测：CBOWvsMASK？</strong></p>
+<p>相同点：</p>
+<p>​ CBOW 的核心思想是，给定上下文，根据它的上文 context-before 和下文 context-after 去</p>
+<p>预测 input word。Bert 本质上也是如此。</p>
+<p>不同点：</p>
+<p>​ * 首先，在 CBOW 中，每个单词会称为 input word，而 Bert 中只有 15%的词会称为 input word。</p>
+<p>​ * 其次，对于数据输入部分，CBOW 中的输入数据只有待预测单词的上下文，而 Bert 的输入是带有[MASK] token 的“完整”句子，也就是说 Bert 在输入端将待预测的 input word 用[MASK] token 代替了。</p>
+<p>​ * 另外，通过 CBOW 模型训练后，每个单词的 word embedding 是唯一的，因此并不能很好的处理一词多异的问题；而 Bert 模型得到的 word embedding （token embedding）融合了上下文信息，就算是同一个单词，在不同的上下文环境下，得到的 word embedding 是不一样的。</p>
+<ul>
+<li>精调</li>
+</ul>
+<blockquote>
+<p>模型精调（Fine-tuning）和微调（Transfer learning）都是针对预训练模型进行模型优化的技术，但它们有一些区别。</p>
+<p>模型微调（Transfer learning）是利用在一个任务中预训练好的模型在另一个相关任务上进行微调的过程。在微调过程中，模型的前几层通常是冻结的（即权重不再更新），只有最后几层需要调整以适应新的任务。这个过程可以快速提高模型的准确性，并且通常只需要较少的数据来完成训练。例如，可以使用在大型图像分类任务上预训练的模型，然后在小型图像分类任务上进行微调。</p>
+<p>相反，<strong>模型精调（Fine-tuning）是指在一个特定任务上使用预训练模型，然后在该任务的训练数据上继续训练整个模型</strong>。在这种情况下，整个模型的权重都会被调整。这个过程需要更多的数据和计算资源，并且通常会产生更好的性能，但也需要更多的时间和精力来完成。</p>
+<p>总的来说，微调是利用预训练模型的知识和特征来快速训练一个新的模型，而精调是对整个模型进行重新训练，以达到更好的性能。</p>
+</blockquote>
+<p>bert的微调可以用于下面的4个场景：</p>
+<p><strong>句子语义相似度的任务；</strong></p>
+<p><strong>多标签分类的任务；</strong></p>
+<p><strong>针对翻译的任务；</strong></p>
+<p><strong>文本生成的任务</strong></p>
+<ul>
+<li>BERT微调</li>
+</ul>
+<p><img alt="image-20240109151912106" src="../figs/image-20240109151912106.png" /></p>
+<h4 id="gpt-1">gpt-1架构、预训练任务<a class="headerlink" href="#gpt-1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>架构</li>
+</ul>
+<p><img alt="image-20240107220452790" src="../figs/image-20240107220452790.png" /></p>
+<p>GPT-1的模型结构包括了12层解码器（decoder）和768维的隐状态向量。在每一层解码器中，GPT-1使用了多头自注意力机制和前向传播网络，用于学习上下文相关的词嵌入（contextual word embeddings）。在生成文本时，GPT-1使用了最终层解码器的输出作为预测结果。
+* 预训练方法</p>
+<p>GPT-1采用了大规模的无监督预训练方法，该方法称为语言建模（language modeling）。具体来说，GPT-1使用了一个基于Transformer解码器的自回归语言模型（auto-regressive language model），通过最大化文本序列的概率，预测下一个单词。</p>
+<h4 id="_17">其余的大模型相关概念<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<ul>
+<li>prompt</li>
+</ul>
+<p>用于调用或触发大型语言模型生成输出的文本或指令。可以是问题、任务描述、或者对模型所期望的回答的提示性指令</p>
+<ul>
+<li>instruction tuning（指令微调）</li>
+</ul>
+<p>通过构建指令格式的实例，然后以**有监督**的方式对大语言模型进行微调。指令格式通常包含任务描述，一对输入输出以及示例</p>
+<ul>
+<li>chain-of-thought（思维链）</li>
+</ul>
+<p>指用户在一次对话中提出一系列相关问题或观点，或者模型生成一系列连贯的回答或输出</p>
+<ul>
+<li>RLHF（人类反馈式强化学习）</li>
+</ul>
+<p>模型基于强化学习框架，通过与人类用户或专家进行交互，从其提供的反馈中学习和改进</p>
+<ul>
+<li>hallucination（幻觉）</li>
+</ul>
+<p>指模型生成的回复包含错误的事实、不准确的信息，或者与用户的查询无关的内容</p>
+<ul>
+<li>in-context learning（上下文学习）</li>
+</ul>
+<p>在特定上下文环境中学习的机器学习方法</p>
+<ul>
+<li>价值观对齐</li>
+</ul>
+<p>指确保人工智能系统的目标、决策和行为与人类价值观一致的过程</p>
+<h2 id="_18">一些常见模型架构图<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="lstm_1">LSTM<a class="headerlink" href="#lstm_1" title="Permanent link">&para;</a></h3>
+<p><img src=" figs\image-20240109150821764.png" alt="image-20240109150821764" style="zoom:80%;" /></p>
+<blockquote>
+<p>标准 LSTM 的架构。{w1，w2，. 。 。 , wN } 表示长度为 N 的句子中的词向量。 {h1, h2, . 。 。 , hN } 是隐藏的向量。</p>
+</blockquote>
+<h3 id="atae-lstm">ATAE-LSTM<a class="headerlink" href="#atae-lstm" title="Permanent link">&para;</a></h3>
+<p><img src=" figs\image-20240109150921828.png" alt="image-20240109150921828" style="zoom:80%;" /></p>
+<blockquote>
+<p>基于注意力的 LSTM 架构。 Aspect embedding已用于确定注意力权重以及句子表示。 {w1，w2，. .. , wN } 表示长度为N的句子中的词向量。 Va 表示aspect embedding。 α是注意力权重。 {h1，h2，. .. , hN } 是隐藏向量。</p>
+</blockquote>
+<h3 id="rnn">RNN<a class="headerlink" href="#rnn" title="Permanent link">&para;</a></h3>
+<p><img src=" figs\image-20240109151118634.png" alt="image-20240109151118634" style="zoom:80%;" /></p>
+<h3 id="bi-lstm">BI-LSTM<a class="headerlink" href="#bi-lstm" title="Permanent link">&para;</a></h3>
+<p><img src=" figs\image-20240109151355236.png" alt="image-20240109151355236" style="zoom:80%;" /></p>
+<h3 id="cnn">CNN<a class="headerlink" href="#cnn" title="Permanent link">&para;</a></h3>
+<p><img src=" figs\image-20240109152116601.png" alt="image-20240109152116601" style="zoom:80%;" /></p>
+<h3 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">&para;</a></h3>
+<p>见预训练部分</p>
+<h2 id="2019">2019级试卷整理<a class="headerlink" href="#2019" title="Permanent link">&para;</a></h2>
+<h3 id="_19"><strong>名词解释</strong><a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>1.预训练</p>
+<p>使用大规模未经过人工标注的数据进行模型训练，从中提取出尽可能多的共性特征，从而使得模型对于后续具有指定任务的学习负担变轻</p>
+<p>2.文本蕴含</p>
+<p>两个文本片段有指向关系。 当认为一个文本片段真实时，可以推断出另一个文本片断的真实性。 也就是指，一个文本片段蕴涵了另一个文本片段的知识。</p>
+<p>3.注意力机制</p>
+<p>让计算机选择性遗忘同时关注上下文，根据具体任务目标，对关注的方向和加权模型进行调整，将有限的注意力集中在重点信息上，从而节省资源，快速获得最有效的信息。</p>
+<p>4.词性标注</p>
+<p>在给定句子中判定每个词的语法范畴，确定其词性和浅层的歧义消除，并加以标注的过程</p>
+<p>5.语言模型</p>
+<p>给定上下文，去预测下一个词或者下一段文本出现的概率</p>
+<p>6.词向量</p>
+<p>将一个词映射到一个向量空间，用多维向量表示（高维特征），这个向量就是词向量。使用多维特征来表示一个词，这样同种类的词汇就会有非常相似的特征</p>
+<h3 id="_20">简答题<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>举出三个分类任务，并说明应用场景</p>
+</li>
+<li>
+<p><strong>文本情感分类：</strong></p>
+</li>
+<li><strong>任务描述：</strong> 将文本分为不同的情感类别，例如正面、负面或中性。</li>
+<li><strong>应用场景：</strong> 社交媒体监控，产品评论分析，舆情分析等。例如，情感分类可以用于分析用户在社交媒体上对产品或服务的评价，以**了解公众对特定话题的情感倾向**。</li>
+<li><strong>主题分类：</strong></li>
+<li><strong>任务描述：</strong> 将文本内容归类为不同的主题或类别，以确定文本所涉及的主要话题。</li>
+<li><strong>应用场景：</strong> 新闻分类，博客主题分类，文档归档等。例如，一个**新闻文章可以通过主题分类**确定是关于体育、政治、科技还是娱乐等方面的信息。</li>
+<li><strong>命名实体识别（NER）：</strong></li>
+<li><strong>任务描述：</strong> 从文本中识别和分类出具有特定意义的实体，如人名、地名、组织机构等。</li>
+<li>
+<p><strong>应用场景：</strong> 信息抽取，知识图谱构建，问答系统等。例如，在一篇新闻文章中，NER可以用于**提取人物的名字、地点的名称，以及与特定组织机构相关的信息**。</p>
+</li>
+<li>
+<p>简述LSTM和GRU的结构，并说明区别</p>
+</li>
+<li>
+<p>LSTM的结构</p>
+</li>
+</ul>
+<p>LSTM引入了门控机制，包括遗忘门（Forget Gate）、输入门（Input Gate）和输出门（Output Gate）。每个门都有一个sigmoid激活函数来决定信息的流动，以及一个tanh激活函数来调整输入。结构如下：</p>
+<ul>
+<li><strong>遗忘门（Forget Gate）：</strong> 控制前一时刻的记忆细胞中的信息是否保留。</li>
+<li><strong>输入门（Input Gate）：</strong> 控制将输入信息添加到记忆细胞的程度。</li>
+<li>
+<p><strong>输出门（Output Gate）：</strong> 控制从记忆细胞到隐藏状态的信息流出程度。</p>
+</li>
+<li>
+<p>GRU的结构</p>
+</li>
+</ul>
+<p>GRU包含更新门（Update Gate）和重置门（Reset Gate），通过这两个门的控制实现信息的更新和重置。结构如下：</p>
+<ul>
+<li><strong>更新门（Update Gate）：</strong> 决定保留前一时刻隐藏状态中的信息的程度。</li>
+<li>
+<p><strong>重置门（Reset Gate）：</strong> 决定遗忘前一时刻隐藏状态中的信息的程度。</p>
+</li>
+<li>
+<p>比较</p>
+</li>
+<li>
+<p>LSTM相对于GRU来说结构更为复杂，包含了更多的门和记忆细胞，在处理大数据集时更有效。GRU则较为简化，参数较少，容易收敛，训练速度可能更快。</p>
+</li>
+<li>LSTM有遗忘门、输入门和输出门，而GRU有更新门和重置门。LSTM可以更精确地控制哪些信息需要保留和遗忘，但GRU通过更少的门来实现类似的功能。</li>
+<li>
+<p>GRU直接将隐藏状态传递给下一个单元；LSTM用记忆细胞来存储长期信息，将隐藏状态包装起来</p>
+</li>
+<li>
+<p>简述CBOW和SKIP-GRAM训练词向量方式的区别</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>CBOW</th>
+<th>Skip-gram</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>输入</strong></td>
+<td>上下文词（多个）</td>
+<td>目标词</td>
+</tr>
+<tr>
+<td><strong>输出</strong></td>
+<td>目标词的概率分布</td>
+<td>上下文词的概率分布</td>
+</tr>
+<tr>
+<td><strong>训练数据样本</strong></td>
+<td>(上下文, 目标词)</td>
+<td>(目标词, 上下文词)</td>
+</tr>
+<tr>
+<td><strong>训练效果</strong></td>
+<td>小规模数据集效果较好</td>
+<td>大规模数据集效果较好</td>
+</tr>
+<tr>
+<td><strong>数据利用率</strong></td>
+<td>利用上下文信息进行训练</td>
+<td>通过目标词生成多个训练样本</td>
+</tr>
+<tr>
+<td><strong>计算效率</strong></td>
+<td>相对较快，因为考虑整个上下文的信息</td>
+<td>相对较慢，因为需要生成多个样本</td>
+</tr>
+<tr>
+<td><strong>适用性</strong></td>
+<td>适用于出现频率较高的词汇</td>
+<td>适用处理罕见词汇和捕捉词汇间的复杂关系</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>简述Bert和GPT的结构区别于预训练的区别</p>
+</li>
+<li>
+<p>结构区别</p>
+<ul>
+<li>Bert使用了Transformer的Encoder，但它是一个**双向**模型，能同时考虑输入文本的左右两侧上下文信息。【多用于自然语言理解】</li>
+<li>GPT使用了Transformer的Decoder，是一个自回归模型。它只能看到输入文本的左侧上下文，因此在处理文本时是**单向**的。【多用于自然语言生成】</li>
+</ul>
+<p>如下图所示</p>
+<p><img alt="image-20240107202154142" src="../figs/image-20240107202154142.png" /></p>
+</li>
+</ul>
+<p>GPT 不是双向的，没有 masking 概念</p>
+<p>Bert 在训练中加入下一个句子预测任务，所以它有 sengment 嵌入</p>
+<ul>
+<li>预训练区别<ul>
+<li>Bert的预训练任务包括MLM和NSP，旨在捕捉词汇级别和句子级别的语义</li>
+<li>GPT的预训练任务是语言建模，模型试图预测下一个词是什么，关注单一方向上的自回归预测</li>
+</ul>
+</li>
+</ul>
+<h3 id="_21">方案设计<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>情景：数据的命名实体已被标注，实体存在重叠和嵌入（比如武汉大学包含武汉这个实体），设计方案完成NER，写出**流程图**、<strong>模块说明</strong>、<strong>评价指标</strong></p>
+</li>
+<li>
+<p>情景：有中文和对应英文的数据集，设计机器翻译系统，写出**流程图**、<strong>模块说明</strong>、<strong>评价指标</strong></p>
+</li>
+</ol>
+<h2 id="2020">2020级试卷整理<a class="headerlink" href="#2020" title="Permanent link">&para;</a></h2>
+<h3 id="_22">名词解释<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ol>
+<li>自然语言</li>
+</ol>
+<p>人类社会发展过程中自然产生的、约定俗成的语言</p>
+<ol>
+<li>分词</li>
+</ol>
+<p>将句子、段落等文本分解为有意义的字词单元，方便后续的处理分析</p>
+<ol>
+<li>实体识别</li>
+</ol>
+<p>指识别文本中具有特定意义的实体，主要包括人名、地名、机构名、专有名词等。简单来说，就是识别自然文本中的实体指称的边界和类别。</p>
+<ol>
+<li>循环神经网络</li>
+</ol>
+<p>循环神经网络 (RNN) 是一种使用序列数据或时序数据的人工神经网络</p>
+<blockquote>
+<p>卷积神经网络（Convolutional Neural Networks, CNN）是**一类包含卷积计算且具有深度结构的前馈神经网络**，包含有输入层、卷积层、池化层、全连接层、输出层</p>
+</blockquote>
+<ol>
+<li>语言模型</li>
+</ol>
+<p>给定上下文，去预测下一个词或者下一段文本出现的概率</p>
+<ol>
+<li>词向量</li>
+</ol>
+<p>将一个词映射到一个向量空间，用多维向量表示（高维特征），这个向量就是词向量。使用多维特征来表示一个词，这样同种类的词汇就会有非常相似的特征</p>
+<h3 id="_23">简答题<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<ol>
+<li>举出三个分类任务，说明应用场景</li>
+</ol>
+<p>19年出现</p>
+<ol>
+<li>简述卷积神经网络、循环神经网络，transformer模型的特点（区别）</li>
+</ol>
+<p><strong>处理数据类型：</strong></p>
+<ul>
+<li><strong>CNN：</strong> 用于处理网格化数据，如图像。</li>
+<li><strong>RNN：</strong> 用于处理序列数据，如文本、时间序列。</li>
+<li><strong>Transformer：</strong> 广泛用于序列到序列的任务，不受序列顺序限制。</li>
+</ul>
+<p><strong>模型结构：</strong></p>
+<ul>
+<li><strong>CNN：</strong> 主要包含卷积层和池化层。</li>
+<li><strong>RNN：</strong> 具有循环结构，通过隐藏状态传递信息。</li>
+<li><strong>Transformer：</strong> 引入了自注意力机制，使模型能够在不同位置之间建立关联。</li>
+</ul>
+<p><strong>并行性：</strong></p>
+<ul>
+<li><strong>CNN 和 Transformer：</strong> 可以在输入中进行并行计算。</li>
+<li><strong>RNN：</strong> 由于循环结构，难以进行有效的并行计算。</li>
+</ul>
+<p><strong>梯度传播：</strong></p>
+<ul>
+<li><strong>CNN 和 Transformer：</strong> 相对较容易进行梯度传播。</li>
+<li>
+<p><strong>RNN：</strong> 容易遇到梯度消失或梯度爆炸的问题。</p>
+</li>
+<li>
+<p>简述word2vec训练词向量的原理和方法</p>
+</li>
+<li>
+<p>原理</p>
+</li>
+</ul>
+<p>把每个词表征为K维的实数向量（每个实数都对应着一个特征，可以是和其他单词之间的联系），将相似的单词分组映射到向量空间的不同部分拥有差不多上下文的两个单词的意思往往是相近的</p>
+<ul>
+<li>方法（见前面）</li>
+<li>CBOW</li>
+<li>Skip-gram</li>
+</ul>
+<p><img alt="image-20240107221945931" src="../figs/image-20240107221945931.png" /></p>
+<ol>
+<li>简述transformer中self-attention机制的原理和计算流程</li>
+</ol>
+<p>见预训练模型部分</p>
+<h3 id="_24">方案设计<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>情景：数据被标注了情感极性，设计一个情感分类方案，写出**流程图**、<strong>模块说明</strong>、<strong>评价指标</strong></p>
+</li>
+<li>
+<p>情景：文档数据集（未标注），句集（标注了实体），设计一个transformer模型，采用预训练和fine-tune构建一个实体识别系统，写出**流程图**、<strong>模块说明</strong>、<strong>评价指标</strong></p>
+</li>
+</ol>
+<h1 id="_25">预测方案设计题：一个关系/实体抽取，一个摘要系统？<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../../../.." class="md-footer__link md-footer__link--prev" aria-label="上一页: 首页">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                首页
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../%E5%A4%A7%E4%B8%89%E4%B8%8B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 大三下">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                大三下
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Whu-WWZ
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/ZehyrW" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<2119240634@qq.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.footer", "navigation.top", "content.action.edit", "content.tabs.link", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+        <script src="../../../../mkdocs/javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
