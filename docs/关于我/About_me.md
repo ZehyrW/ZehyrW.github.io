@@ -1,5 +1,5 @@
 # ABOUT ME :person:
-> 更新于 2024.1.25
+> 更新于 2024.7.23
 ## 1. 教育经历🏫
 
 **High School（2018 - 2021）：** [**华中师范大学第一附属中学**](https://www.hzsdyfz.com.cn/about.html) <br>
@@ -41,20 +41,37 @@
     <img src="figs/%E6%95%B0%E6%A8%A1%E5%9B%BD%E4%BA%8C.JPG" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
   </center>
 
+* 计算机设计大赛中南赛区一等奖
+  <center>
+    <img src="figs/计算机设计大赛获奖证书.jpg" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
  > 感觉网安专业打数模比较顺手，毕竟安全专业❌AI专业✔️<br>
  > 提供一些数模的学习视频：[**清风数模学习视频**](https://www.youtube.com/@user-in3nl7rt5w)、[**数学建模老哥**](https://space.bilibili.com/400575790/channel/series)
 
- * 蓝桥杯py组
- * 大挑-学术作品赛
- * 小挑
- * 计设
+### 社会实践
 
-> 但愿能获奖hhh
+* 2022寒假社会实践
+  <center>
+    <img src="figs/武汉大学2022年社会实践.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-To be continue...
-
+* 2023暑期社会实践
+  <center>
+    <img src="figs/武汉大学2023年社会实践.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 ### 科研经历
-大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何坤** 老师。老师人很好，不过没啥成果出来，研究了一下联邦学习的东西。。。希望后面能有一篇ccf论文出来
+> 大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何坤** 老师，老师人很好，不过主攻密码学
+
+* 专利
+> 大三寒假跟着ydy学长与zjs弄的🙇‍
+
+【**Under review**】[一种主动挖掘和评估越狱漏洞的自动模糊检测方法及系统](./figs/专利.png)
+
+* 论文
+> 大三下和 **又见三木** gg➕欣欣姐一起完成的一个工作 感谢！！🙇‍
+
+【**Accepted**】[Diverse Generation while Maintaining Semantic Coordination: A Diffusion-Based Data Augmentation Method for Object Detection](Diverse%20Generation%20while%20Maintaining%20Semantic.pdf) (ICPR2024  CCF-C)
 
 ## 3. 未来期望🕊️
 
