@@ -66,7 +66,10 @@
 * 专利
 > 大三寒假跟着ydy学长与zjs弄的🙇‍
 
-【**Under review**】[一种主动挖掘和评估越狱漏洞的自动模糊检测方法及系统](./figs/专利.png)
+【**Under review**】**一种主动挖掘和评估越狱漏洞的自动模糊检测方法及系统**
+  <center>
+    <img src="./figs/专利.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 论文
 > 大三下和 **又见三木** gg➕欣欣姐一起完成的一个工作 感谢！！🙇‍
