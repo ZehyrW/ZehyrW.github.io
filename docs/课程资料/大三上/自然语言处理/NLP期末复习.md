@@ -23,30 +23,35 @@
   **构造词典的方法**：
 
   * 前缀树
-
-  <img src="figs\image-20240104164430787.png" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240104164430787.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   每个结点包含一个字符；	从root到某结点，构成字符串；	结点的子结点不相同
 
   * AC自动机
-
-  <img src=" figs\image-20240104165310635.png" alt="image-20240104165310635" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240104165310635.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   ---
 
   * 序列标注法：没有
-
-  ![image-20240104171022697]( figs\image-20240104171022697.png)
+  <center>
+    <img src="./figs/image-20240104171022697.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   * N-最短路径法：没有
 
   * **新词发现算法**：
-
-    <img src=" figs\image-20240104170515771.png" alt="image-20240104170515771" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240104170515771.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
     > 其中的词频、自由度、凝固度的计算如下。选取abc作为文本文段。
-
-    <img src=" figs\image-20240104170624109.png" alt="image-20240104170624109" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240104170624109.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
     新词发现的必要性：未登录词
     计算候选词的频率，凝固度（互信息），自由度（信息熵）作为特征：**无监督**
@@ -60,20 +65,24 @@
 * **基于HMM的词性标注**：（可能算法题）
 
   * 参数：
-
-  <img src=" figs\image-20240104172227501.png" alt="image-20240104172227501" style="zoom: 67%;" />
+  <center>
+    <img src="./figs/image-20240104172227501.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   * 转移概率：(隐含状态之间存在转换概率)
-
-  <img src=" figs\image-20240104172323849.png" alt="image-20240104172323849" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104172323849.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   * 发射概率：（隐含状态与可见状态之间的概率）
-
-  <img src=" figs\image-20240104172427543.png" alt="image-20240104172427543" style="zoom: 50%;" />
+  <center>
+    <img src="./figs/image-20240104172427543.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   * 进行预测（维特比算法 无环有向图最优路径算法）
-
-  <img src=" figs\image-20240104173432929.png" alt="image-20240104173432929" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104173432929.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   * HMM的应用
 
@@ -126,8 +135,9 @@
 #### 词义排歧
 
 * **解释**：确定一个歧义词的哪一种语义在一个特殊的使用环境中被调用
-
-<img src=" figs\image-20240104181924819.png" alt="image-20240104181924819" style="zoom: 33%;" />
+  <center>
+    <img src="./figs/image-20240104181924819.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 
 
@@ -136,12 +146,13 @@
 #### 句法结构（可能出简答题）
 
 * 句法成分树
-
-<img src=" figs\format,png" alt="img" style="zoom:50%;" />
+  <center>
+    <img src="./figs/format.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 节点是什么？边代表什么意思？
 
-节点表示**句子中的成分**，边表示不同节点（成分）之间的**句法关系**
+节点表示 **句子中的成分** ，边表示不同节点（成分）之间的 **句法关系**
 
 通常有两种主要类型的节点：短语节点（Phrase Node）和词汇节点（Lexical Node）。
 
@@ -157,12 +168,13 @@
 #### 依存结构（要掌握）简答题？
 
 * 依存树
-
-<img src=" figs\v2-0bc54788687c714d12f467dd91aa385e_720w.webp" alt="img" style="zoom:50%;" />
+  <center>
+    <img src="./figs/v2-0bc54788687c714d12f467dd91aa385e_720w.webp" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 节点是什么？边代表什么意思？
 
-在依存树中，节点表示**句子中的词语**，而边表示词语之间的**依存关系**。
+在依存树中，节点表示 **句子中的词语**，而边表示词语之间的 **依存关系**。
 
 1. 每个节点代表句子中的一个词语。这个词语通常是句子的一个单词，可能包括标点符号。节点可以携带附加信息，如词性标签、词汇性质等。
 2. 每条边表示两个词语之间的依存关系。在依存树中，依存关系通常分为两种类型：
@@ -178,34 +190,38 @@
 #### 语言模型的概念
 
 * **解释**： 给定上下文，去预测下面一个词或者一段文本出现的概率
-
-<img src=" figs\image-20240104200553550.png" alt="image-20240104200553550" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104200553550.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 **零概率问题**：
 
 由于数据稀疏造成，在训练集中而未在测试集中出现的n元短语，会造成含有该短语的句子的出现概率为0
 
-语言模型的参数就是**词的概率以及给定前几个词情况下的条件概率**
+语言模型的参数就是 **词的概率以及给定前几个词情况下的条件概率**
 
 **神经网络与传统语言模型**：
-
-<img src=" figs\image-20240104201114804.png" alt="image-20240104201114804" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104201114804.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 #### word2vec模型架构
 
 **两种无监督训练方法**（模型要能画出来）
 
 * 倒三角架构（CBOW）
-
-<img src=" figs\image-20240104201257653.png" alt="image-20240104201257653" style="zoom: 67%;" />
+  <center>
+    <img src="./figs/image-20240104201257653.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 **功能**：通过上下文预测当前词出现的概率
 
 
 
 * 三角架构（skip-gram）
-
-<img src=" figs\image-20240104202213691.png" alt="image-20240104202213691" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104202213691.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 **功能**：通过当前词预测上下文
 
@@ -317,8 +333,9 @@ Word2Vec通过这样的训练过程，使得词汇中的每个词都能够在向
 **特点：** 适用于处理静态数据，对于序列或时间相关的信息处理相对有限。
 
 就是循环神经网络单独的一层，就不多说了
-
-![img]( figs\4e897c0cf84a14f4700f8267f31625cd.png)
+  <center>
+    <img src="./figs/4e897c0cf84a14f4700f8267f31625cd.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 卷积神经网络cnn
 
@@ -326,9 +343,14 @@ Word2Vec通过这样的训练过程，使得词汇中的每个词都能够在向
 
 **特点：** 在图像处理、计算机视觉领域表现出色，能够减少参数数量，对平移不变性有良好的处理能力。
 
-  ![image-20240104212300944]( figs\image-20240104212300944.png)
+  <center>
+    <img src="./figs/image-20240104212300944.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-<img src=" figs\image-20240104213518255.png" alt="image-20240104213518255" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240104213518255.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
 
 全连接层就是传统的全连接神经网络
 
@@ -350,7 +372,9 @@ Word2Vec通过这样的训练过程，使得词汇中的每个词都能够在向
 
 看似级联，实则是沿着时序，建立了网络隐藏层之间的时序关联。每一时刻的状态s2不仅取决于当前时刻的输入，还取决于上一时刻s1的状态
 
-![image-20240104215340160]( figs\image-20240104215340160.png)
+  <center>
+    <img src="./figs/image-20240104215340160.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 训练方式和传统的神经网络一样，采用误差反向传播与梯度下降来更新权重
 
@@ -362,11 +386,15 @@ Word2Vec通过这样的训练过程，使得词汇中的每个词都能够在向
 
 **特点：** 对于处理长序列、长距离依赖关系表现优异，解决了传统RNN的一些问题。
 
-<img src=" figs\image-20240104220547138.png" alt="image-20240104220547138" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104220547138.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 相较于rnn，lstm新增了时间链ct（相当于日记本，记录长时记忆）,与短时记忆st之间建立联系
 
-<img src=" figs\image-20240104221027880.png" alt="image-20240104221027880" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240104221027880.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 f1是删除门：根据xt和st-1来过滤重要特征，忽略无关信息。记忆细胞中多少信息需要被删除
 
@@ -384,15 +412,23 @@ f2是输入门：根据xt和st-1决定。多少信息添加到记忆细胞中
 
 **解释**：将有限的注意力集中在重点信息上，从而节省资源，快速获得最有效的信息。
 
-![Attention的位置]( figs\d3164-2019-11-07-weizhi.png)
+  <center>
+    <img src="./figs/d3164-2019-11-07-weizhi.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-注意力实际上就是**权重**
+注意力实际上就是 **权重**
+
+  <center>
+    <img src="./figs/image-20240105233653997.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 <img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" />
 
 需要三个指定的输入Q(query)，K(key)，V(value)，然后通过公式得到注意力的计算结果，这个结果代表query在key和value作用下的表示。其中Q、K、V由输入X分别于其参数矩阵W、K、W 相乘得到
 
-<img src=" figs\image-20240105233816142.png" alt="image-20240105233816142" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240105233816142.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 这其实是自注意力机制
 
@@ -424,15 +460,20 @@ ATAE-BILSTM（舆情实验课）
 
 修辞结构理论是有关篇章分析和生成的理论
 
-该理论认为，连贯的篇章由不同层次的修辞关系组成，并且可以表示为一种**树形**结构。从篇章单位（EDU）开始，修辞结构树逐步覆盖整个篇章，形成层次化的篇章结构树。层次的复杂程度与篇章语义的复杂程度相关，语义越复杂，层次越多。如下所示。
+该理论认为，连贯的篇章由不同层次的修辞关系组成，并且可以表示为一种 **树形** 结构。从篇章单位（EDU）开始，修辞结构树逐步覆盖整个篇章，形成层次化的篇章结构树。层次的复杂程度与篇章语义的复杂程度相关，语义越复杂，层次越多。如下所示。
 
-<img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
+  <center>
+    <img src="./figs/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
 
 #### 基础语篇单位（EDU）指什么
 
 **解释**：基本篇章单元是句子内不重叠的文本片段
 
-![img]( figs\v2-fd7fe81f15ba5bb1c95326544763ce72_720w.webp)
+  <center>
+    <img src="./figs/v2-fd7fe81f15ba5bb1c95326544763ce72_720w.webp" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > EDU 分割即“给定一个句子（任意语言），如何将它切割成若干个基本篇章单元“
 
@@ -440,19 +481,21 @@ ATAE-BILSTM（舆情实验课）
 
 是两个篇章单位。
 
-**核心**是篇章最重要的部分，表示中心信息的单元，具有相对完整的语义。
+**核心** 是篇章最重要的部分，表示中心信息的单元，具有相对完整的语义。
 
-**卫星**是传达支撑信息的其他单元，用于补充说明核心部分，脱离核心的卫星部分通常是没有意义的。
+**卫星** 是传达支撑信息的其他单元，用于补充说明核心部分，脱离核心的卫星部分通常是没有意义的。
 
 
 
-每个修辞关系可以联结两个或多个EDU。 最基本的修辞关系有两种，分别是**单核关系**和**多核关系**，篇章中单核关系占主要部分。
+每个修辞关系可以联结两个或多个EDU。 最基本的修辞关系有两种，分别是 **单核关系** 和 **多核关系** ，篇章中单核关系占主要部分。
 
 * 具有不对称性的核心-卫星关系nucleus-satellite relation， 也称单核关系，修辞关系联结的单元存在主次之别；
 
 * 无主次之分的多核关系 multinuclear relation，修饰关系联结的单元中无所谓谁是核心谁是卫星。 对比contrast关系和列表关系list都是典型的多核关系
 
-<img src=" figs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 67%;" />
+  <center>
+    <img src="./figs/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0b2NoYW5nZQ==,size_16,color_FFFFFF,t_70" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 大致来说，完成篇章分析步骤如下：
 
@@ -471,13 +514,15 @@ ATAE-BILSTM（舆情实验课）
 
 **解释**：字面意思，输入一个序列，输出另一个序列，比如在机器翻译中，输入英文，输出中文。这种结构最重要的地方在于输入序列和输出序列的长度是可变的。而Seq2Seq模型也经常在输出的长度不确定时采用。
 
-seq2seq是一个**由两个循环神经网络RNN组成的端到端模型**：
+seq2seq是一个 **由两个循环神经网络RNN组成的端到端模型** ：
 
-(1) 一个**编码器**(encoder)，将模型的输入序列作为输入，然后编码固定大小的“上下文向量”。
+(1) 一个 **编码器** (encoder)，将模型的输入序列作为输入，然后编码固定大小的“上下文向量”。
 
-(2) 一个**解码器**(decoder)，使用来自解码器生成的上下文向量作为从其生成输出序列的“种子”
+(2) 一个 **解码器** (decoder)，使用来自解码器生成的上下文向量作为从其生成输出序列的“种子”
 
-![image-20240107190337618]( figs\image-20240107190337618.png)
+  <center>
+    <img src="./figs/image-20240107190337618.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 此处encoder和decoder都是RNN，通常为lstm和gru
 
@@ -485,25 +530,29 @@ seq2seq是一个**由两个循环神经网络RNN组成的端到端模型**：
 
 1. 语义向量不参与decoder
 
-<img src=" figs\image-20240109143740075.png" alt="image-20240109143740075" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240109143740075.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+ 
+encoder负责 **将输入的文本序列压缩成指定长度的向量** ，即语义向量C，这个向量可以看作输入序列的语义。
 
-encoder负责**将输入的文本序列压缩成指定长度的向量**，即语义向量C，这个向量可以看作输入序列的语义。
+decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输出序列。此时 **上一时刻的输出会成为当前时刻的输入**，而且语义向量C只作为初始状态参与运算，后面运算与C无关。
 
-decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输出序列。此时**上一时刻的输出会成为当**
+1. 语义向量参与decoder
 
-**前时刻的输入**，而且语义向量C只作为初始状态参与运算，后面运算与C无关。
+  <center>
+    <img src="./figs/image-20240109144014573.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-2. 语义向量参与decoder
-
-<img src=" figs\image-20240109144014573.png" alt="image-20240109144014573" style="zoom:67%;" />
-
-**语义向量**C参与序列所有时刻的运算，上一时刻的输出仍然作为当前时刻的输入，但C参与每个时刻的运算。
+**语义向量** C参与序列所有时刻的运算，上一时刻的输出仍然作为当前时刻的输入，但C参与每个时刻的运算。
 
 > Decoder的每一次解码又会作为下一次解码的输入，但这样会导致一个问题，如果其中一个RNN单元解码出现误差，那么这个误差就会传递到下一个RNN单元，使训练结果误差越来越大。所以可以引入attention机制。
 
 #### 生成模型的训练目标函数
 
-<img src=" figs\image-20240109144327953.png" alt="image-20240109144327953" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240109144327953.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 交叉熵损失
 
@@ -517,9 +566,11 @@ decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输�
 
 ​	当模型训练好后，给其输入一段话，其输出的每个单元的 y 给的是各个词的概率，如何根据概率选词且如何判断是否句子终止呢？
 
-​	采取的方法是在每个时间步，选取当前时间步条件概率最大的k个词，作为该时间步的候选输出序列。如下图，k选择2，第一步p(A|c)和p(C|c)最大；第二步 P(AB|c),P(CE|c)最大；第三步P(ABD|c),P(CED|c)最大。这样，得到的最终候选序列就是各个时间步的得到的序列的集合，下图即为6个 {A, C, AB, CE,ABD, CED}。那么最终预测结果就是要从这6个中选出分最高的。按概率算的话，**序列越长的概率肯定越小**，所以一般最后分数计算会有一个和序列长度有关的惩罚系数，如下。
+​	采取的方法是在每个时间步，选取当前时间步条件概率最大的k个词，作为该时间步的候选输出序列。如下图，k选择2，第一步p(A|c)和p(C|c)最大；第二步 P(AB|c),P(CE|c)最大；第三步P(ABD|c),P(CED|c)最大。这样，得到的最终候选序列就是各个时间步的得到的序列的集合，下图即为6个 {A, C, AB, CE,ABD, CED}。那么最终预测结果就是要从这6个中选出分最高的。按概率算的话， **序列越长的概率肯定越小** ，所以一般最后分数计算会有一个和序列长度有关的惩罚系数，如下。
 
-<img src=" figs\image-20240109144909651.png" alt="image-20240109144909651" style="zoom: 67%;" />
+  <center>
+    <img src="./figs/image-20240109144909651.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 ##### top-k采样
 
@@ -549,7 +600,9 @@ decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输�
 
 与 top-k 固定选取前 k 个 tokens 不同，top-p 选取的 tokens 数量不是固定的，这个方法是设定一个概率阈值。例如：将 top-p 设定为 0.15，即选择前 15% 概率的 tokens 作为候选。如下图所示，United 和 Netherlands 的概率加起来为 15% ，所以候选词就是这俩，最后再从这些候选词里，根据概率分数，选择 united 这个词。
 
-<img src=" figs\image-20240109145152385.png" alt="image-20240109145152385" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240109145152385.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 #### 生成模型的评估： BLEU、ROUGE
 
@@ -561,11 +614,15 @@ decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输�
 
     考虑1-gram到N-gram。很容易理解，就是像下面这样
 
-    <img src=" figs\image-20240109145648077.png" alt="image-20240109145648077" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240109145648077.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-    > 一般情况1-gram可以代表原文有多少词被单独翻译出来，可以反映译文的**充分性**，2-gram以上可以反映译文的**流畅性**，它的值越高说明可读性越好
+    > 一般情况1-gram可以代表原文有多少词被单独翻译出来，可以反映译文的 **充分性** ，2-gram以上可以反映译文的 **流畅性** ，它的值越高说明可读性越好
 
-<img src=" figs\image-20240109150002216.png" alt="image-20240109150002216" style="zoom: 67%;" />
+  <center>
+    <img src="./figs/image-20240109150002216.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 大致知道这个指标是干啥的就行 计算公式就算了。。。。
 
@@ -573,7 +630,9 @@ decoder将语义向量C作为初始状态输入到Decoder的RNN中，得到输�
 
 ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面向n元词召回率的评价方法。ROUGE准则由一系列的评价方法组成，包括ROUGE-N(N是n-gram中n，取值有1，2，3，4)，ROUGE-L，ROUGE-S, ROUGE-W，ROUGE-SU等。
 
-<img src=" figs\image-20240109150233661.png" alt="image-20240109150233661" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109150233661.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 可以看出，ROUGE与召回率的定义很相似。
 
@@ -593,23 +652,28 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 
 #### transformer架构：（s2s with attention）
 
-![image-20240105203755634]( figs\image-20240105203755634.png)
+  <center>
+    <img src="./figs/image-20240105203755634.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-​	Transformer 训练过程与 seq2seq 类似，首先 Encoder 端得到输入的 encoding 表示，并将其输入到 Decoder 端做交互式 attention，之后在 Decoder 端接收其相应的输入，经过多头 self-attention 模块之后，结合 Encoder 端的输出，再经过 FFN，得到 Decoder端的输出之后，最后经过一个线性全连接层，就可以通过 softmax 来预测下一个单词(token)，然后根据 softmax 多分类的损失函数，将 loss 反向传播即可，所以从整体上来说，Transformer训练过程就相当于一个有监督的多分类问题。需要注意的是，**Encoder 端可以并行计算**，一次性将输入序列全部 encoding 出来，但 Decoder端不是一次性把所有单词(token)预测出来的，而是像 seq2seq一样一个接着一个预测出来的。（BERT和GPT的特点）
+​	Transformer 训练过程与 seq2seq 类似，首先 Encoder 端得到输入的 encoding 表示，并将其输入到 Decoder 端做交互式 attention，之后在 Decoder 端接收其相应的输入，经过多头 self-attention 模块之后，结合 Encoder 端的输出，再经过 FFN，得到 Decoder端的输出之后，最后经过一个线性全连接层，就可以通过 softmax 来预测下一个单词(token)，然后根据 softmax 多分类的损失函数，将 loss 反向传播即可，所以从整体上来说，Transformer训练过程就相当于一个有监督的多分类问题。需要注意的是， **Encoder 端可以并行计算** ，一次性将输入序列全部 encoding 出来，但 Decoder端不是一次性把所有单词(token)预测出来的，而是像 seq2seq一样一个接着一个预测出来的。（BERT和GPT的特点）
 
 * encoder
 
   * self-attention
+  <center>
+    <img src="./figs/image-20240105233653997.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-  <img src=" figs\image-20240105233653997.png" alt="image-20240105233653997" style="zoom:50%;" />
-
-  ![image-20240107223823585]( figs\image-20240107223823585.png)
+  <center>
+    <img src="./figs/image-20240107223823585.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   ​	self-attention，是一种通过自身和自身相关联的 attention 机制，从而得到一个更好的representation 来表达自身，self-attention 可以看成一般 attention 的一种特殊情况。在 self-attention 中， Q=K=V,序列中的每个单词(token)和该序列中其余单词(token)进行 attention 计算。self-attention 的特点在于无视词(token)之间的距离直接计算依赖关系，从而能够学习到序列的内部结构。
 
   
 
-  ​	引入 Self Attention 后会更容易**捕获句子中长距离的相互依赖的特征**，因为如果是**RNN 或者 LSTM，需要依次序序列计算，对于远距离的相互依赖的特征，要经过若干时间步步骤的信息累积才能将两者联系起来，而距离越远，有效捕获的可能性越小。**
+  ​	引入 Self Attention 后会更容易 **捕获句子中长距离的相互依赖的特征** ，因为如果是 **RNN 或者 LSTM，需要依次序序列计算，对于远距离的相互依赖的特征，要经过若干时间步步骤的信息累积才能将两者联系起来，而距离越远，有效捕获的可能性越小。** 
 
   ​	但是 Self Attention 在计算过程中会直接将句子中任意两个单词的联系通过一个计算步骤直接联系起来，所以远距离依赖特征之间的距离被极大缩短，有利于有效地利用这些特征。除此外，Self Attention 对于增加计算的并行性也有直接帮助作用。
 
@@ -617,7 +681,9 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 
   * multi-head self attention
 
-  ![image-20240107224155258]( figs\image-20240107224155258.png)
+  <center>
+    <img src="./figs/image-20240107224155258.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   ​	进行 Multi-head Attention 的原因是将模型分为多个头，形成多个子空间，可以让模型去关注不同方面的信息，最后再将各个方面的信息综合起来。其实直观上也可以想到，如果自己设计这样的一个模型，必然也不会只做一次 attention，多次 attention 综合的结果至少能够起到增强模型的作用，也可以类比 CNN 中同时使用多个卷积核的作用，直观上讲，多头的注意力有助于网络捕捉到更丰富的特征/信息。
 
@@ -630,12 +696,19 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
   
 
   * add&norm
-  
-  <img src=" figs\image-20240109151506070.png" alt="image-20240109151506070" style="zoom: 50%;" />
 
-![image-20240107224930381]( figs\image-20240107224930381.png)
+  <center>
+    <img src="./figs/image-20240109151506070.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-<img src=" figs\image-20240109151557174.png" alt="image-20240109151557174" style="zoom: 80%;" />
+  <center>
+    <img src="./figs/image-20240107224930381.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
+  <center>
+    <img src="./figs/image-20240109151557174.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
 
 * decoder
 
@@ -657,7 +730,9 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 
 * 与LSTM/RNN的对比分析
 
-![image-20240107225217208]( figs\image-20240107225217208.png)
+  <center>
+    <img src="./figs/image-20240107225217208.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 替代S2S？
 
@@ -666,12 +741,18 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 #### bert架构、预训练任务、什么是精调
 
 * 架构
+  <center>
+    <img src="./figs/image-20240107204538064.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-<img src=" figs\image-20240107204538064.png" alt="image-20240107204538064" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240107204646730.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-<img src=" figs\image-20240107204646730.png" alt="image-20240107204646730" style="zoom:67%;" />
+  <center>
+    <img src="./figs/image-20240109151729680.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-<img src=" figs\image-20240109151729680.png" alt="image-20240109151729680" style="zoom: 67%;" />
 
 * 预训练任务
 
@@ -681,7 +762,9 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 
   > 给定一句话，随机 Mask 掉这句话中的一个或几个词，要求根据剩余词汇预测被 Mask 掉的几个词是什么
 
-  <img src=" figs\image-20240107202755895.png" alt="image-20240107202755895" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240107202755895.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   在一句话中随机选择 15%的词汇用于预测。对于原句中被 Mask 掉的词汇，80%的情况会使用一个特殊符号**[MASK]**替换，10%的情况下采用一个**任意词**替换，剩余 10%情况下保持**原词汇不变**
 
@@ -699,7 +782,9 @@ ROUGE基于摘要中n元词(n-gram)的共现信息来评价摘要，是一种面
 
   > 给定一篇文章中的两句话，判断第二句话在文本中是否紧跟在第一句话之后
 
-  <img src=" figs\image-20240107203235337.png" alt="image-20240107203235337" style="zoom:50%;" />
+  <center>
+    <img src="./figs/image-20240107203235337.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   实际上是段落重排序的简化版：只考虑两句话，判断是否是一篇文章中的前后句。在实际预训练过程中，文章作者从文本语料库中随机选择 50%正确语句对和 50%错误语句对进行训练，与 Masked LM 任务相结合，让模型能够更准确地刻画语句乃至整篇文章层面的语
 
@@ -753,7 +838,9 @@ bert的微调可以用于下面的4个场景：
 
 * BERT微调
 
-![image-20240109151912106]( figs\image-20240109151912106.png)
+  <center>
+    <img src="./figs/image-20240109151912106.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 
 
@@ -761,7 +848,9 @@ bert的微调可以用于下面的4个场景：
 
 * 架构
 
-![image-20240107220452790]( figs\image-20240107220452790.png)
+  <center>
+    <img src="./figs/image-20240107220452790.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 GPT-1的模型结构包括了12层解码器（decoder）和768维的隐状态向量。在每一层解码器中，GPT-1使用了多头自注意力机制和前向传播网络，用于学习上下文相关的词嵌入（contextual word embeddings）。在生成文本时，GPT-1使用了最终层解码器的输出作为预测结果。
 * 预训练方法
@@ -810,29 +899,40 @@ GPT-1采用了大规模的无监督预训练方法，该方法称为语言建模
 
 ### LSTM
 
-<img src=" figs\image-20240109150821764.png" alt="image-20240109150821764" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109150821764.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
+
 
 > 标准 LSTM 的架构。{w1，w2，. 。 。 , wN } 表示长度为 N 的句子中的词向量。 {h1, h2, . 。 。 , hN } 是隐藏的向量。
 
 ### ATAE-LSTM
 
-<img src=" figs\image-20240109150921828.png" alt="image-20240109150921828" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109150921828.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 > 基于注意力的 LSTM 架构。 Aspect embedding已用于确定注意力权重以及句子表示。 {w1，w2，. .. , wN } 表示长度为N的句子中的词向量。 Va 表示aspect embedding。 α是注意力权重。 {h1，h2，. .. , hN } 是隐藏向量。
 
 ### RNN
 
-<img src=" figs\image-20240109151118634.png" alt="image-20240109151118634" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109151118634.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 
 
 ### BI-LSTM
 
-<img src=" figs\image-20240109151355236.png" alt="image-20240109151355236" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109151355236.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 ### CNN
 
-<img src=" figs\image-20240109152116601.png" alt="image-20240109152116601" style="zoom:80%;" />
+  <center>
+    <img src="./figs/image-20240109152116601.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 ### Transformer
 
@@ -960,7 +1060,9 @@ GPT-1采用了大规模的无监督预训练方法，该方法称为语言建模
 
     如下图所示
 
-    ![image-20240107202154142]( figs\image-20240107202154142.png)
+  <center>
+    <img src="./figs/image-20240107202154142.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
   GPT 不是双向的，没有 masking 概念
 
@@ -1058,9 +1160,11 @@ GPT-1采用了大规模的无监督预训练方法，该方法称为语言建模
   - CBOW
   - Skip-gram
 
-![image-20240107221945931]( figs\image-20240107221945931.png)
+  <center>
+    <img src="./figs/image-20240107221945931.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
-4. 简述transformer中self-attention机制的原理和计算流程
+1. 简述transformer中self-attention机制的原理和计算流程
 
 见预训练模型部分
 
