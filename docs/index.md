@@ -12,6 +12,7 @@ Here are some buttons to get the destination quickly!
 
 <center>
 [课程资料 :book:](https://zehyrw.github.io/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%89%E4%B8%8A/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/NLP%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/){: .md-button }
+[科研 🔬](https://zehyrw.github.io/%E7%A7%91%E7%A0%94/Pytorch/Pytorch/){: .md-button }
 [保研 :person:](https://zehyrw.github.io/%E4%BF%9D%E7%A0%94/24%E5%B1%8A%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/写在前面/){: .md-button }
 [关于我 :smile:](https://zehyrw.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/About_me/){: .md-button }
 </center>
