@@ -12,6 +12,10 @@ nav:
   - 大三下:
     - 网络安全: 课程资料/大三下/网络安全/网络安全.md 
     - 计算机病毒: 课程资料/大三下/计算机病毒/计算机病毒.md
+- 科研: 
+  - Pytorch: 科研/Pytorch/Pytorch.md
+  - AIGC: 科研/生成式模型/生成式模型.md
+  - 科研Tips: 科研/科研Tips/tips.md
 - 保研: 
   - 信息收集: 
     - 保研/信息收集/信息收集.md
@@ -36,7 +40,7 @@ theme:
   font:
     # text: Long Cang
     text: Exo 2
-    code: Playfair Display
+    # code: Playfair Display
   favicon: assets/images/博客.png
   logo: assets/官方网站.png
   palette:
