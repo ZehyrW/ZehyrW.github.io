@@ -30,7 +30,7 @@ ps -ef | grep jupyter | grep -v grep | awk '{print $2}' | xargs kill -9
 
 
 
-### 3. 使用transformers库调用模型进行单机多卡训练[reference]([处理大型模型进行推理 (huggingface.co)](https://huggingface.co/docs/accelerate/usage_guides/big_modeling))
+### 3. [**使用transformers库调用模型进行单机多卡训练**](https://huggingface.co/docs/accelerate/usage_guides/big_modeling)
 
 ```python
 import os
@@ -47,7 +47,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained("bigscience/T0pp", device_map="aut
 
 
 
-### 4. tqdm在一行内显示
+### 4. tqdm设置在终端一行内显示
 
 ```python
 import time
