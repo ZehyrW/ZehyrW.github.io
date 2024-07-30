@@ -64,7 +64,6 @@
 > 大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何坤** 老师，老师人很好，不过主攻密码学
 
 * 专利
-> 大三寒假跟着ydy学长与zjs弄的🙇‍
 
 【**Under review**】**一种主动挖掘和评估越狱漏洞的自动模糊检测方法及系统**
   <center>
@@ -72,7 +71,7 @@
   </center>
 
 * 论文
-> 大三下和 **又见三木** gg➕欣欣姐一起完成的一个工作 感谢！！🙇‍
+> 大三下和 [**又见三木**](https://summu77.github.io/)➕欣欣姐一起完成的一个工作 感谢！！🙇‍
 
 【**Accepted**】[Diverse Generation while Maintaining Semantic Coordination: A Diffusion-Based Data Augmentation Method for Object Detection](Diverse%20Generation%20while%20Maintaining%20Semantic.pdf) (ICPR2024  CCF-C)
 
