@@ -1,5 +1,5 @@
 # ABOUT ME :person:
-> 更新于 2024.7.23
+
 ## 1. 教育经历🏫
 
 **High School（2018 - 2021）：** [**华中师范大学第一附属中学**](https://www.hzsdyfz.com.cn/about.html) <br>
@@ -8,7 +8,8 @@
 
 ## 2. 我的大学🎓
 
-### 本科课程
+### 本科生阶段
+#### 本科课程
 
 具体内容见 [**国家网络安全学院培养方案(2018版)**](./国%20家%20网%20络%20安%20全%20学院培养方案(2018版).pdf)
 
@@ -29,7 +30,17 @@
 
 其余一些课程情况就不过多说了，感觉每一届情况不能相提并论，不过选课之前还是要了解一下大致情况的😋多问问学长学姐:）
 
-### 竞赛成果
+#### 荣誉奖项
+
+* 武汉大学甲等奖学金
+* 武汉大学阮立平专项奖学金
+* 绿盟科技奖学金
+* 雷军计算机科研实践资助基金
+* 武汉大学三好学生
+* 武汉大学优秀共青团员
+* 武汉大学社会活动积极分子
+
+#### 竞赛成果
 
 * 华中杯省二
   <center>
@@ -49,7 +60,7 @@
  > 感觉网安专业打数模比较顺手，毕竟安全专业❌AI专业✔️<br>
  > 提供一些数模的学习视频：[**清风数模学习视频**](https://www.youtube.com/@user-in3nl7rt5w)、[**数学建模老哥**](https://space.bilibili.com/400575790/channel/series)
 
-### 社会实践
+#### 社会实践
 
 * 2022寒假社会实践
   <center>
@@ -60,8 +71,16 @@
   <center>
     <img src="figs/武汉大学2023年社会实践.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
   </center>
-### 科研经历
-> 大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何坤** 老师，老师人很好，不过主攻密码学
+#### 科研经历
+> 大二下进入[**珞珈之戍实验室**](https://datasec.whu.edu.cn/)，跟着 **何琨** 老师，老师人很好，不过主攻密码学
+
+* 大创
+
+【**企业合作**】**音达康护——基于音频感知的智慧居家养老系统**
+
+  <center>
+    <img src="./figs/合作意向书.png" style="width:60%; height:60%;box-shadow: 5px 5px 10px #888888; border-right:#007979 2px solid; border-top:#007979 2px solid; border-left:#007979 2px solid; border-bottom:#007979 2px solid;" />
+  </center>
 
 * 专利
 
@@ -73,7 +92,11 @@
 * 论文
 > 大三下和 [**又见三木**](https://summu77.github.io/)➕欣欣姐一起完成的一个工作 感谢！！🙇‍
 
-【**Accepted**】[Diverse Generation while Maintaining Semantic Coordination: A Diffusion-Based Data Augmentation Method for Object Detection](Diverse%20Generation%20while%20Maintaining%20Semantic.pdf) (ICPR2024  CCF-C)
+【**Accepted**】[**Diverse Generation while Maintaining Semantic Coordination: A Diffusion-Based Data Augmentation Method for Object Detection**](Diverse%20Generation%20while%20Maintaining%20Semantic.pdf) (ICPR2024  CCF-C)
+
+### 研究生阶段
+
+> 待开启ing...
 
 ## 3. 未来期望🕊️
 
