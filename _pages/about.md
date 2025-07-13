@@ -26,7 +26,7 @@ My research focuses on **artificial intelligence security and privacy**.
 
 # 🔥 News
 - *2025.04* &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
-- *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition 2024.
+- *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition(ICPR) 2024.
 
 <!-- # 📝 Publications 
 
