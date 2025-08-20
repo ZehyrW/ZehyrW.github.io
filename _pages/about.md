@@ -28,7 +28,7 @@ My research focuses on **artificial intelligence security and privacy**.
 - *2025.04* &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
 - *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition(ICPR) 2024.
 
-<!-- # 📝 Publications 
+# 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -42,7 +42,7 @@ My research focuses on **artificial intelligence security and privacy**.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
+- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** 
 
 # 🎖 Honors and Awards
 - Outstanding Undergraduate Graduate, WHU    Apr. 2025
