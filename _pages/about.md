@@ -73,4 +73,4 @@ Sen Nie, **Zhuo Wang**, Xinxin Wang, Kun He
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2024.11 - 2025.05*, [WenXiaoBai](https://www.yosee.com), China.
+- *2024.11 - 2025.05*, [WenXiaoBai](https://www.yosee.com)<img src='images/yosee.png' style='width: 6em;'>, China.
