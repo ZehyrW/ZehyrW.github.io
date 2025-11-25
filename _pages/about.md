@@ -39,7 +39,7 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 Zixiao Wang, Yuxin Wang, Xiaorui Wang, Mengting Xing, Jie Gao, Jianjun Xu, Guangcan Liu, Chenhui Jin, **Zhuo Wang**, Shengzhuo Zhang, Hongtao Xie
 
-[![](https://img.shields.io/github/stars/MetaStone-AI/MetaStone-S1?style=social&label=Code+Stars)](https://github.com/MetaStone-AI/MetaStone-S1) 
+[![](https://img.shields.io/github/stars/MetaStone-AI/MetaStone-S1?style=social&label=Code+Stars)](https://github.com/MetaStone-AI/XBai-o4) 
 </div>
 </div>
 
