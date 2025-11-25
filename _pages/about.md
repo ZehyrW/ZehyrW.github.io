@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello👋! I am Zhuo Wang(王卓), a first-year Master student at [University of Science and Technology of China](https://eeis.ustc.edu.cn/main.htm), fortunately advised by [Prof. Hongtao Xie](https://imcc.ustc.edu.cn/_upload/tpl/0d/13/3347/template3347/xiehongtao.html) in the National Engineering Laboratory for Brain-inspired Intelligence Technology and Application ([NEL-BITA](https://leinao.ustc.edu.cn/main.htm)) and Intelligent Multimedia Content Computing Laboratory ([IMCC](https://imcc.ustc.edu.cn/main.htm)).
+Hello👋! I am Zhuo Wang(王卓), a first-year Master’s student at [University of Science and Technology of China](https://eeis.ustc.edu.cn/main.htm), fortunately advised by [Prof. Hongtao Xie](https://imcc.ustc.edu.cn/_upload/tpl/0d/13/3347/template3347/xiehongtao.html) in the National Engineering Laboratory for Brain-inspired Intelligence Technology and Application ([NEL-BITA](https://leinao.ustc.edu.cn/main.htm)) and Intelligent Multimedia Content Computing Laboratory ([IMCC](https://imcc.ustc.edu.cn/main.htm)).
 
 I received my B.Eng in Cyberspace Security from [Wuhan University](https://cse.whu.edu.cn) in 2025. Before my time at WHU, I completed three years of study at the No.1 Middle School Affiliated to Central China Normal University[(华中师大一附中)](https://www.hzsdyfz.com.cn).
 
@@ -27,7 +27,7 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 
 # 🔥 News
-- *2025.04* &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
+- *2025.04*: &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
 - *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition(ICPR) 2024.
 
 # 📝 Publications 
