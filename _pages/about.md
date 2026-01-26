@@ -27,6 +27,7 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 
 # 🔥 News
+- *2026.01*: &nbsp;🎉🎉  1 paper is accepted to International Conference on Learning Representations(ICLR) 2026.
 - *2025.04*: &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
 - *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition(ICPR) 2024.
 
