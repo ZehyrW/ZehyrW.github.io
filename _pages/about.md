@@ -32,7 +32,7 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/TTS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/TTS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Test-Time Scaling with Reflective Generative Model](https://arxiv.org/abs/2507.01951)
