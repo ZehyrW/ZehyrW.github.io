@@ -33,6 +33,17 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/CSR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Contrastive Spectral Rectification: Test-Time Defense towards Zero-shot Adversarial Robustness of CLIP](https://arxiv.org/abs/2601.19210)
+
+Sen Nie, Jie Zhang, **Zhuo Wang**, Shiguang Shan, Xilin Chen
+
+[![](https://img.shields.io/github/stars/Summu77/CSR?style=social&label=Code+Stars)](https://github.com/Summu77/CSR) 
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/TTS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
