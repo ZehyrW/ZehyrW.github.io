@@ -27,20 +27,21 @@ My research focuses on **Intelligent Content Generation and Safety**.
 
 
 # 🔥 News
+- *2026.05*: &nbsp;🎉🎉  1 paper is accepted to International Conference on Machine Learning(ICML) 2026.
 - *2026.01*: &nbsp;🎉🎉  1 paper is accepted to International Conference on Learning Representations(ICLR) 2026.
 - *2025.04*: &nbsp;🎉🎉  I am selected as an outstanding undergraduate graduate.
 - *2024.06*: &nbsp;🎉🎉  1 paper is accepted to International Conference On Pattern Recognition(ICPR) 2024.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/CSR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/CSR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Contrastive Spectral Rectification: Test-Time Defense towards Zero-shot Adversarial Robustness of CLIP](https://arxiv.org/abs/2601.19210)
 
 Sen Nie, Jie Zhang, **Zhuo Wang**, Shiguang Shan, Xilin Chen
 
-[![](https://img.shields.io/github/stars/Summu77/CSR?style=social&label=Code+Stars)](https://github.com/Summu77/CSR) 
+[![Code Stars](https://img.shields.io/github/stars/Summu77/CSR?style=social&label=Code%20Stars)](https://github.com/Summu77/CSR)
 </div>
 </div>
 
